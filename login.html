@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Presto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imagens\prestofav.ico">
+    <link rel="stylesheet" href="login_css.css">
+    <link rel="stylesheet" href="css_cadastro_usuario.css">
+  </head>
+   <body>
+
+    <header>
+      <div id="a">
+      <a href="index.html"><img src="imagens\prestologo.png" id="presto_logo"></a>
+      <a href="index.html" id="link_one"><p id="des_presto">Presto</p></a>
+    </div>
+      <form class="form_pes_pro" action="pagina.php" method="post">
+        <input type="text" placeholder="Pesquisar profissionais" id="inp_dig_pro">
+        <input type="submit" name="" value="Buscar" id="btn_pes">
+      </form>
+    <nav id="nav1">
+      <ul id="ul1">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="presto_pagina_escolha.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <div id="divb">
+      <ul id="ul2">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div id="login">
+      <p id="des_login">Login</p>
+      <form id="form_login" action="login.php" method="post">
+        <input type="email" class="inputl" name="email" title="E-mail" placeholder="E-mail" pattern="a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" id="input_login_usuario" required>
+        <input type="password" class="inputl" name="senha" placeholder="Senha" id="senhal" required>
+        <button type="submit" id="btn_login" value="entrar" name="entrar">Entrar</button>
+        <input type="checkbox" name="" value="logado" id="check_logado">
+        <label for="check_logado" id="la">Mantenha-me conectado</label>
+        <p id="essenha"><a href="#">Esqueci minha senha</a></p>
+      </form>
+    </div>
+
+    <footer>
+      <p id="des_footer">2011-2019 © Todos os direitos reservados. Presto® é uma marca registrada de Presto Tecnologia.</p>
+      <ul id="ul4">
+        <li id="li_on"><img src="imagens\prestologo.png" id="img_presto"><p id="presto_footer">Presto</p></li>
+        <li><a href="#"><img src="imagens\whatsapp.png" id="img_what"> 81 99444 - 4410</a></li>
+        <li><a href="#"><img src="imagens\facebook.png" id="img_fab">facebook.com/presto</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
