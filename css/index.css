@@ -1,17 +1,17 @@
 /* INICIO FONTLATO */
 @font-face {
     font-family: LatoRegular;
-    src: url(/font/lato/Lato-Regular.ttf);
+    src: url(font/lato/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: LatoMedium;
-    src: url(/font/lato/Lato-Medium.ttf);
+    src: url(font/lato/Lato-Medium.ttf);
 }
 
 @font-face {
     font-family: LatoBold;
-    src: url(/font/lato/Lato-Bold.ttf);
+    src: url(font/lato/Lato-Bold.ttf);
     
 }
 /* FIM FONTLATO */
