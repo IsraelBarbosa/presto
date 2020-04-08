@@ -1,67 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Presto</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="imagens\prestofav.ico">
-    <link rel="stylesheet" href="css_index.css">
-  </head>
-  <body>
-
+</head>
+<body>
+    <!-- INICIO HEADER -->
     <header>
-      <div id="a">
-      <a href="index.html"><img src="imagens\prestologo.png" id="presto_logo"></a>
-      <a href="index.html" id="link_one"><p id="des_presto">Presto</p></a>
-    </div>
-      <form class="form_pes_pro" action="buscar.php" method="post">
-        <input type="text" placeholder="Pesquisar profissionais" id="inp_dig_pro">
-        
-        <a id="btn_pes" href="buscar.php">buscar</a>
-    </form>
-    <nav id="nav1">
-      <ul id="ul1">
-        <li><a href="login.html">Login</a></li>
-        <li><a href="presto_pagina_escolha.html">Cadastre-se</a></li>
-      </ul>
-    </nav>
+        <a href="index.html" id="logo">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogo">Presto</span>
+        </a>
+        <form action="pag.php" id="buscaPre">
+            <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
+            <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
+        </form>
+        <ul id="logCad">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Cadastre-se</a></li>
+        </ul>
     </header>
+    <!-- FIM HEADER -->
 
-    <div id="divb">
-      <ul id="ul2">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
+    <!-- INICIO NAV -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- FIM NAV -->
 
-    <div id="divc">
-      <img src="imagens\profissionais.jpg" id="img_prof">
-      <img src="imagens\solicitantes.jpg" id="img_soli">
-    </div>
-
-    <div id="divd">
-      <img src="imagens\support.png" alt="profissionais" id="logo_pro">
-      <p id="p_des1">Cadastro como profissional</p>
-      <p id="p_des2">e faça o melhor trabalho</p>
-    </div>
-
-    <div id="dive">
-      <img src="imagens\girl.png" alt="solicitantes" id="logo_soli">
-      <p id="p_des3">Cadastro como solicitante</p>
-      <p id="p_des4">e contrate o melhor profissional</p>
-    </div>
-    <button id="btn_cadastreall"><a href="presto_pagina_escolha.html">Cadastre</a></button>
-
+    <!-- INICIO FOOTER -->
     <footer>
-      <p id="des_footer">2011-2019 © Todos os direitos reservados. Presto® é uma marca registrada de Presto Tecnologia.</p>
-      <ul id="ul4">
-        <li id="li_on"><img src="imagens\prestologo.png" id="img_presto"><p id="presto_footer">Presto</p></li>
-        <li><a href="#"><img src="imagens\whatsapp.png" id="img_what"> 81 99444 - 4410</a></li>
-        <li><a href="#"><img src="imagens\facebook.png" id="img_fab">facebook.com/presto</a></li>
-      </ul>
+        <a href="index.html" id="logoFooter">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogoFooter">Presto</span>
+        </a>
+        <span id="direitos">2011-2020 © Todos os direitos reservados. Presto® é uma marca registrada de Presto Tecnologia.</span>
     </footer>
-
-
-  </body>
+    <!-- FIM FOOTER -->
+</body>
 </html>
