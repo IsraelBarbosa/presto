@@ -116,9 +116,11 @@ ul#logCad > li > a {
 
 hr {
     width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: 5px solid black;
+    border: 5px solid rgb(255, 0, 0);
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 
