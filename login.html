@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Presto</title>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro</title>
 </head>
 <body>
     <!-- INICIO HEADER -->
@@ -24,8 +25,6 @@
     </header>
     <!-- FIM HEADER -->
 
-    <hr>
-    
     <!-- INICIO NAV -->
     <nav>
         <ul id="menu">
@@ -35,6 +34,29 @@
         </ul>
     </nav>
     <!-- FIM NAV -->
+
+    <!-- INICIO FORMLOGIN -->
+    <form action="" method="post" id="formLogin">
+        <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
+        <input type="email" name="" placeholder="nome@exemplo.com" class="inpClass">
+
+        <label for="inpSenha" class="labClass" id="labSenha">Senha</label>
+        <input type="password" name="" placeholder="" class="inpClass">
+
+        <label id="containerCheck">
+            <input type="checkbox" name="" id="checkConect">
+            <span id="clique"></span>
+        </label>
+
+        <span id="descConec">Mantenha-me conectado</span>
+        <span id="descEsq"><a href="#">Esqueci a senha</a></span>
+
+        <div id="entrarouCadastrar">
+            <button type="submit" id="btnEntrar">Entrar</button>
+            <a href="cadastro.html" id="btnCadastro">Cadastrar</a>
+        </div>    
+    </form>
+    <!-- FIM FORMLOGIN -->
 
     <!-- INICIO FOOTER -->
     <footer>
