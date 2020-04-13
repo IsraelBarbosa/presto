@@ -1,0 +1,3908 @@
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1800px) {
+     body {
+         font-family: arial,sans-serif;
+         margin-left: 200px;
+         margin-right: 200px;
+    }
+     header {
+         height: 80px;
+         width: 100%;
+         background-color: red;
+    }
+     div#a {
+         width: 260px;
+    }
+     img#presto_logo {
+         margin-left: 50px;
+         margin-top: 10px;
+         height: 60px;
+         display: inline;
+    }
+     a#link_one {
+         float: right;
+         display: inline;
+         margin-top: 20px;
+         margin-right:26px;
+         font-size: 40px;
+         text-decoration: none;
+         color: black;
+    }
+     form.form_pes_pro{
+         margin-top: -50px;
+         margin-left: 520px;
+         position: absolute;
+    }
+     input#inp_dig_pro {
+         height: 30px;
+         width: 250px;
+         border: 0;
+         outline: none;
+         border-radius: 10px;
+         padding-left: 8px;
+    }
+     input#btn_pes {
+         height: 30px;
+         width: 80px;
+         background-color: black;
+         color: white;
+         border: 0;
+         border-radius: 10px;
+         margin-left: -8px;
+         cursor: pointer;
+    }
+     nav#nav1 {
+         position: absolute;
+         margin-left: 1010px;
+         margin-top: -42px;
+    }
+     ul#ul1 {
+         list-style-type: none;
+    }
+     ul#ul1 li {
+         float: left;
+         padding-left: 80px;
+    }
+     ul#ul1 li a {
+         text-decoration: none;
+         color: white;
+    }
+     ul#ul1 li a:hover{
+         text-decoration: underline;
+    }
+     div#divb {
+         height: 60px;
+         width: 100%;
+         background-color: black;
+    }
+     ul#ul2 {
+         padding-left: 55px;
+         list-style-type: none;
+         padding-top: 22px;
+    }
+     ul#ul2 li {
+         float: left;
+         padding-left: 200px;
+    }
+     ul#ul2 li a {
+         text-decoration: none;
+         color: white;
+    }
+     ul#ul2 li a:hover {
+         text-decoration: underline;
+    }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+
+      .inputs {
+
+      }
+
+     input#input_nome_usuario {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+     footer {
+         height: 100%;
+         width: 100%;
+         background-color: #ff0000;
+         margin-bottom: 0%;
+         border-radius: 10px 10px 0px 0px;
+         margin-top: 5%;
+    }
+     p#des_footer {
+         padding-top: 83px;
+         float: right;
+         padding-right: 25%;
+         color: white;
+    }
+     img#img_what {
+    }
+     img#img_fab {
+         padding-right: 4px;
+    }
+     img#img_presto {
+         height: 80px;
+    }
+     p#presto_footer {
+         margin-top: -60px;
+         font-size: 40px;
+         color: black;
+         margin-left: 85px;
+    }
+     footer #ul4 {
+         list-style-type: none;
+         padding-top: 40px;
+         margin-left: 5%;
+    }
+     li#li_on {
+         padding-bottom: 50px;
+    }
+     footer #ul4 li a {
+         text-decoration: none;
+         color: white;
+    }
+     footer #ul4 li a:hover {
+         text-decoration: underline;
+    }
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1799px) and (min-width: 1700px) {
+     body {
+         font-family: arial,sans-serif;
+         margin-left: 100px;
+         margin-right: 100px;
+    }
+     header {
+         height: 80px;
+         width: 100%;
+         background-color: red;
+    }
+     div#a {
+         width: 260px;
+    }
+     img#presto_logo {
+         margin-left: 50px;
+         margin-top: 10px;
+         height: 60px;
+         display: inline;
+    }
+     a#link_one {
+         float: right;
+         display: inline;
+         margin-top: 20px;
+         margin-right:26px;
+         font-size: 40px;
+         text-decoration: none;
+         color: black;
+    }
+     form.form_pes_pro{
+         margin-top: -50px;
+         margin-left: 520px;
+         position: absolute;
+    }
+     input#inp_dig_pro {
+         height: 30px;
+         width: 250px;
+         border: 0;
+         outline: none;
+         border-radius: 10px;
+         padding-left: 8px;
+    }
+     input#btn_pes {
+         height: 30px;
+         width: 80px;
+         background-color: black;
+         color: white;
+         border: 0;
+         border-radius: 10px;
+         margin-left: -8px;
+         cursor: pointer;
+    }
+     nav#nav1 {
+         position: absolute;
+         margin-left: 1020px;
+         margin-top: -42px;
+    }
+     ul#ul1 {
+         list-style-type: none;
+    }
+     ul#ul1 li {
+         float: left;
+         padding-left: 80px;
+    }
+     ul#ul1 li a {
+         text-decoration: none;
+         color: white;
+    }
+     ul#ul1 li a:hover{
+         text-decoration: underline;
+    }
+     div#divb {
+         height: 60px;
+         width: 100%;
+         background-color: black;
+    }
+     ul#ul2 {
+         padding-left: 55px;
+         list-style-type: none;
+         padding-top: 22px;
+    }
+     ul#ul2 li {
+         float: left;
+         padding-left: 200px;
+    }
+     ul#ul2 li a {
+         text-decoration: none;
+         color: white;
+    }
+     ul#ul2 li a:hover {
+         text-decoration: underline;
+    }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+     footer {
+         height: 100%;
+         width: 100%;
+         background-color: #ff0000;
+         margin-bottom: 0%;
+         border-radius: 10px 10px 0px 0px;
+         margin-top: 5%;
+    }
+     p#des_footer {
+         padding-top: 83px;
+         float: right;
+         padding-right: 25%;
+         color: white;
+    }
+     img#img_what {
+    }
+     img#img_fab {
+         padding-right: 4px;
+    }
+     img#img_presto {
+         height: 80px;
+    }
+     p#presto_footer {
+         margin-top: -60px;
+         font-size: 40px;
+         color: black;
+         margin-left: 85px;
+    }
+     footer #ul4 {
+         list-style-type: none;
+         padding-top: 40px;
+         margin-left: 5%;
+    }
+     li#li_on {
+         padding-bottom: 50px;
+    }
+     footer #ul4 li a {
+         text-decoration: none;
+         color: white;
+    }
+     footer #ul4 li a:hover {
+         text-decoration: underline;
+    }
+}
+/* ============================================= FIM =================================== ========================================================================================= =========================================================================================*/
+
+@media screen and (max-width: 1699px) and (min-width: 1600px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 520px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 250px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 1025px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          padding-left: 55px;
+          list-style-type: none;
+          padding-top: 22px;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 25%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1599px) and (min-width: 1500px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 445px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 250px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 915px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          padding-left: 55px;
+          list-style-type: none;
+          padding-top: 22px;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 25%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1499px) and (min-width: 1400px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 390px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 250px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 835px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          padding-left: 20px;
+          list-style-type: none;
+          padding-top: 22px;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 2%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 25%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1399px) and (min-width: 1300px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 435px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 195px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 800px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -35px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 2%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 16%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1299px) and (min-width: 1200px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 435px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 195px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 800px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: 28px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 44%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 2%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 12%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1199px) and (min-width: 1100px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 345px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 195px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 670px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: 28px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 510px;
+         width: 50%;
+         background-color: #313640;
+         margin-left: 25%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 44%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 2%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        padding-right: 6%;
+        color: white;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 1099px) and (min-width: 1000px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 320px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 195px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 624px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 80px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: 28px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 60%;
+         background-color: #313640;
+         margin-left: 20%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 44%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 700px;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 999px) and (min-width: 900px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 320px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 195px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 595px;
+          margin-top: -42px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 50px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: 28px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 70%;
+         background-color: #313640;
+         margin-left: 18%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 44%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 590px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 899px) and (min-width: 800px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 60px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 20px;
+          margin-right:26px;
+          font-size: 40px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -50px;
+          margin-left: 295px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 150px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 600px;
+          margin-top: -60px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+          text-align: center;
+     }
+      ul#ul1 li {
+          padding-top: 8px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -65px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 70%;
+         background-color: #313640;
+         margin-left: 16%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 44%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 500px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 799px) and (min-width: 700px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 50px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 17px;
+          margin-right: 55px;
+          font-size: 35px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -42px;
+          margin-left: 250px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 150px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 545px;
+          margin-top: -60px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+          text-align: center;
+     }
+      ul#ul1 li {
+          padding-top: 8px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -117px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 200px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 75%;
+         background-color: #313640;
+         margin-left: 12%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 43%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 68%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 415px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 699px) and (min-width: 600px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 80px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 50px;
+          margin-top: 10px;
+          height: 50px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 17px;
+          margin-right: 55px;
+          font-size: 35px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: -42px;
+          margin-left: 224px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 143px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 470px;
+          margin-top: -60px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+          text-align: center;
+     }
+      ul#ul1 li {
+          padding-top: 8px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: 13px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 105px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 90%;
+         background-color: #313640;
+         margin-left: 5%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 330px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 599px) and (min-width: 500px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 180px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 160px;
+          margin-top: 10px;
+          height: 50px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 17px;
+          margin-right: -55px;
+          font-size: 35px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: 22px;
+          margin-left: 125px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 143px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 131px;
+          margin-top: 84px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 30px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -35px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 105px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 95%;
+         background-color: #313640;
+         margin-left: 2%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 43%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 225px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 499px) and (min-width: 400px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 180px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 125px;
+          margin-top: 10px;
+          height: 50px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 17px;
+          margin-right: -20px;
+          font-size: 35px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: 22px;
+          margin-left: 90px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 143px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 95px;
+          margin-top: 77px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 30px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -76px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 105px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 99%;
+         background-color: #313640;
+         margin-left: 0%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 45%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 83px;
+        float: right;
+        color: white;
+        width: 160px;
+        text-align: center;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 50px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
+@media screen and (max-width: 399px) and (min-width: 300px) {
+      body {
+          font-family: arial,sans-serif;
+     }
+      header {
+          height: 180px;
+          width: 100%;
+          background-color: red;
+     }
+      div#a {
+          width: 260px;
+     }
+      img#presto_logo {
+          margin-left: 75px;
+          margin-top: 10px;
+          height: 50px;
+          display: inline;
+     }
+      a#link_one {
+          float: right;
+          display: inline;
+          margin-top: 17px;
+          margin-right: 30px;
+          font-size: 35px;
+          text-decoration: none;
+          color: black;
+     }
+      form.form_pes_pro{
+          margin-top: 22px;
+          margin-left: 40px;
+          position: absolute;
+     }
+      input#inp_dig_pro {
+          height: 30px;
+          width: 143px;
+          border: 0;
+          outline: none;
+          border-radius: 10px;
+          padding-left: 8px;
+     }
+      input#btn_pes {
+          height: 30px;
+          width: 80px;
+          background-color: black;
+          color: white;
+          border: 0;
+          border-radius: 10px;
+          margin-left: -8px;
+          cursor: pointer;
+     }
+      nav#nav1 {
+          position: absolute;
+          margin-left: 45px;
+          margin-top: 77px;
+     }
+      ul#ul1 {
+          list-style-type: none;
+     }
+      ul#ul1 li {
+          float: left;
+          padding-left: 30px;
+     }
+      ul#ul1 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul1 li a:hover{
+          text-decoration: underline;
+     }
+      div#divb {
+          height: 60px;
+          width: 100%;
+          background-color: black;
+     }
+      ul#ul2 {
+          margin-left: -37px;
+          list-style-type: none;
+          padding-top: 22px;
+          position: absolute;
+     }
+      ul#ul2 li {
+          float: left;
+          padding-left: 60px;
+     }
+      ul#ul2 li a {
+          text-decoration: none;
+          color: white;
+     }
+      ul#ul2 li a:hover {
+          text-decoration: underline;
+     }
+     #cadastro{
+         height: 560px;
+         width: 100%;
+         background-color: #313640;
+         margin-left: 0%;
+         margin-top: 5%;
+         padding-top: 3%;
+         border-radius: 15px;
+    }
+     img#img_user {
+         margin-left: 39%;
+    }
+     #des_cadastro1 {
+         color: white;
+         text-align: center;
+         font-size: 25px;
+    }
+     form#form_usuario{
+         margin-left: 25%;
+         margin-top: 5%;
+    }
+     .inputs {
+         width: 65%;
+    }
+     input#input_nome_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+    }
+     input#cpf {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#input_email_usuario {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#telefone {
+         height: 29px;
+         width: 65%;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#celular {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     form#form_usuario ul {
+         list-style-type: none;
+         margin-left: 1%;
+         margin-top: 1%;
+         color: white;
+         font-size: 10px;
+    }
+     form#form_usuario ul li {
+         padding-top: 1%;
+         float: left;
+         padding-left: 2%;
+    }
+     input#senha{
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     input#senha2 {
+         height: 29px;
+         border: 0px;
+         padding-left: 2%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+    }
+     button#btn_enviar {
+         height: 29px;
+         width: 30%;
+         border: 0px;
+         padding-left: 0%;
+         border-radius: 10px;
+         outline: none;
+         margin-top: 2%;
+         cursor: pointer;
+         margin-left: 18%;
+         background-color: #0095d0;
+         color: white;
+    }
+    footer {
+        height: 100%;
+        width: 100%;
+        background-color: #ff0000;
+        margin-bottom: 0%;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 5%;
+   }
+    p#des_footer {
+        padding-top: 140px;
+        float: right;
+        color: white;
+        width: 270px;
+        text-align: center;
+        padding-left: 20px;
+        position: absolute;
+   }
+    img#img_what {
+   }
+    img#img_fab {
+        padding-right: 4px;
+   }
+    img#img_presto {
+        height: 80px;
+   }
+    p#presto_footer {
+        margin-top: -60px;
+        font-size: 40px;
+        color: black;
+        margin-left: 85px;
+        position: absolute;
+   }
+    footer #ul4 {
+        list-style-type: none;
+        padding-top: 40px;
+        margin-left: 5%;
+   }
+    li#li_on {
+        padding-bottom: 90px;
+        padding-left: 35px;
+   }
+    footer #ul4 li a {
+        text-decoration: none;
+        color: white;
+   }
+    footer #ul4 li a:hover {
+        text-decoration: underline;
+   }
+
+}
+/* ============================================= FIM ===================================
+=========================================================================================
+=========================================================================================*/
