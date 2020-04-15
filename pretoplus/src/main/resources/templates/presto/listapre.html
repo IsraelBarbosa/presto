@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Lista</title>
+	</head>
+	<body>
+		<h2>Lista de solicitantes</h2>
+		<table>
+			<thead>
+				<th>Nome</th>
+				<th>Email</th>
+				<th>Outro</th>
+			</thead>
+			<tbody>
+				<tr th:each="prestador: ${prestadores}">
+					<td th:text="${prestador.NomePrestador}"></td>
+					<td th:text="${prestador.Email}"></td>
+					<td>
+						<a th:href="@{/editarP/{id}(id=${prestador.IdPrestador})}">Editar</a> |
+						<a th:href="@{/excluirP/{id}(id=${prestador.IdPrestador})}">Excluir</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	
+	
+	</body>
+</html>
