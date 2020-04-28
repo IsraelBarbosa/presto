@@ -123,17 +123,6 @@ ul#logCad > li > a {
 }
 /* FIM HEADER */
 
-
-hr {
-    width: 1000px;
-    border: 5px solid rgb(255, 0, 0);
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,0);
-}
-
-
 /* INICIO NAV */
 nav#index {
     width: 100%;
