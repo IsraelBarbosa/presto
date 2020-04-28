@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/logado.css">
+    <link rel="stylesheet" href="css/cadastroprestador.css">
+    <title>Pedreiro</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogo">Presto</span>
+        </a>
+        <form action="pag.php" id="buscaPre">
+            <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
+            <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
+        </form>
+
+        <!-- Container logado -->
+        <div class="containerLog">
+            <img src="img/cliente.png" alt="foto do perfil">
+            <span class="nome">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
+            <div class="inforPerf">
+                <span class="infCliPres">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
+                <span class="infCliPres">Felipe da Silva <span class="cliPres">(Prestador)</span></span>
+                <hr class="hrDiv">
+                <span class="sobrePerfil"><a href="#">Editar perfil</a></span>
+                <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+    <!-- INICIO NAV -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- FIM NAV -->
+
+    <!-- INICIO FORM CADASTRO PRESTADOR -->
+    <form action="" method="post" id="cadPres">
+        <h3 id="titCadPres">Preencha o formulário para trabalhar como prestador</h3>
+        <p id="titPro">Sua profissão</p>
+        <select name="" id="profissoes">
+            <option class="optPro">Selecione</option>
+            <option class="optPro" value="Pedreiro">Pedreiro</option>
+            <option class="optPro" value="ajundanteDePedreiro">Ajudante de pedreiro</option>
+            <option class="optPro" value="Marceneiro">Marceneiro</option>
+            <option class="optPro" value="MestreDeObras">Mestre de Obras</option>
+        </select>
+
+        <p id="titServ">Descreva quais tipos de serviços que você realiza</p>
+        <textarea name="" id="descTiposSer"></textarea>
+
+        <p id="titDoc">Envie um anexo da CTPS que comprove experiência, min. 6 meses.</p>
+        <input type="file" name="" id="enviarFile" oninput="pegarNomeDoc()">
+
+        <span id="nomeArq">Nenhum arquivo selecionado</span>
+        <button id="btnEscArq">Escolher arquivo</button>
+
+        <button type="submit" id="EnvCadaPres">Enviar</button>
+    </form>
+    <!-- FIM FORM CADASTRO PRESTADOR -->
+
+    <!-- INICIO FOOTER -->
+    <footer>
+        <a href="index.html" id="logoFooter">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogoFooter">Presto</span>
+        </a>
+        <span id="direitos">2011-2020 © Todos os direitos reservados. Presto® é uma marca registrada de Presto
+            Tecnologia.</span>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/cadastroprestador.js"></script>
+</body>
+</html>
