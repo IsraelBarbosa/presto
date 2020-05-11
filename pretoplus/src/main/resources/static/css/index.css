@@ -37,7 +37,6 @@ header {
     background-color: #2185D0;
 }
 
-
 a#logo {
     position: relative;
     top: 7px;
@@ -53,39 +52,12 @@ span#titLogo {
     left: 3px;
 }
 
-span#titLogo1 {
-    font-size: 28px;
-    font-family: LatoBold;
-    color: #000000;
-    position: relative;
-    top: 0px;
-    left: 3px;
-}
-
 form#buscaPre {
     display: inline-block;
     position: relative;
     top: -22px;
     left: 113px;
 }
-
-form#buscaPre1 {
-    display: inline-block;
-    position: relative;
-    top: 0px;
-    left: 113px;
-}
-
-input#inpSearch{
-   width: 281px;
-   height: 37px;
-   border: 1px solid #DEDEDF;
-   border-radius: 100px;
-   font-family: LatoMedium;
-   padding: 10px 40px 10px 16px;
-   color: #000000b9;
-}
-
 
 input[type="search"] {
    width: 281px;
@@ -125,14 +97,6 @@ ul#logCad {
     font-family: LatoBold;
 }
 
-ul#logCad1 {
-    display: inline-block;
-    position: relative;
-    top: 0px;
-    right: -400px;
-    font-family: LatoBold;
-}
-
 ul#logCad > li {
     display: inline-block;
     margin-right: 30px;
@@ -147,32 +111,10 @@ ul#logCad > li > a {
     color: #FFFFFF;
     font-size: 16px;
 }
-
-
-ul#logCad1 > li {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-ul#logCad1 > li:last-of-type {
-    margin-right: 0px;
-}
-
-ul#logCad1 > li > a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-}
 /* FIM HEADER */
 
-#example_length{
-	display: none;
-}
 
-#example_info{
-	display: none;
-}
-hr {
+hr.hrTeste {
     width: 1000px;
     border: 5px solid rgb(255, 0, 0);
     position: fixed;
@@ -183,12 +125,6 @@ hr {
 
 
 /* INICIO NAV */
-nav#index {
-    width: 100%;
-    height: 60px;
-    padding: 0 13.5% 0 13.5%;
-    background-color: #00B5AD;
-}
 nav {
     width: 100%;
     height: 60px;

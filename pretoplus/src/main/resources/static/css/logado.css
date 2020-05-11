@@ -42,10 +42,10 @@ div.inforPerf {
     left: 0;
     z-index: 1;
     width: 229px;
-    height: 130px;
+    height: auto;
     background-color: #FFFFFF;
     padding: 5px 0;
-    box-shadow: 0 5px 6px #00000096;
+    box-shadow: 0 5px 6px #0000004a;
     display: none;
 }
 
@@ -65,9 +65,13 @@ span.infCliPres {
     text-align: center;
     font-family: LatoRegular;
     margin-top: 10px;
-    color: #000000CC;
     cursor: pointer;
     font-size: 16px;
+}
+
+span.infCliPres > a {
+    color: #000000CC;
+    text-decoration: none;
 }
 
 hr.hrDiv {
@@ -89,8 +93,21 @@ span.sobrePerfil > a {
     text-decoration: none;
 }
 
+span.sair {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: LatoBold;
+}
+
+span.sair > a {
+    color: rgba(255, 0, 0, 0.802);
+    text-decoration: none;
+}
+
 span.infCliPres:hover,
-span.sobrePerfil:hover {
+span.sobrePerfil:hover,
+span.sair:hover {
     text-decoration: underline;
 }
 /* FIM CONTAINER DE LOGIN */

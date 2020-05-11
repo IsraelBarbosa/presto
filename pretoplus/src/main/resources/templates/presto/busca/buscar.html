@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/logado.css">
+    <link rel="stylesheet" href="css/buscar.css">
+    <title>Buscar</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogo">Presto</span>
+        </a>
+        <form action="pag.php" id="buscaPre">
+            <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
+            <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
+        </form>
+
+        <!-- Container logado -->
+        <div class="containerLog">
+            <img src="img/cliente.png" alt="foto do perfil">
+            <span class="nome">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
+            <div class="inforPerf">
+                <span class="infCliPres" onclick="mudarStatCli()">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
+                <span class="infCliPres" onclick="mudarStatPrest()"><a href="cadastroprestador.html">Felipe da Silva <span class="cliPres">(Prestador)</span></a></span>
+                <hr class="hrDiv">
+                <span class="sobrePerfil"><a href="#">Editar perfil</a></span>
+                <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+                <hr class="hrDiv">
+                <span class="sair"><a href="#">Sair</a></span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+    <!-- INICIO NAV -->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- FIM NAV -->
+
+    <!-- INICIO PESQUISA DE RESULTADOS -->
+    <div class="contPesquisa">
+        <!-- Inicio container resultado de busca -->
+        <div class="resultBusca">
+            <p class="titPri">Resultado de pesquisa</p>
+            <p class="titSeg">Encontramos <span class="numEnc">52</span> prestadores para sua busca</p>
+        </div>
+
+        <!-- Filtro -->
+        <form action="" method="post" class="filtro">
+            <h3 class="titFil">Filtro</h3>
+
+            <!-- estados -->
+            <label for="estado" class="titLab pri">Estado</label>
+            <select name="" id="estado" class="selClas" onchange="mudarEst(this.value)">
+                <option class="optClas">Selecione o estado</option>
+                <option class="optClas" value="pernambuco">Pernambuco</option>
+                <option class="optClas" value="paraíba">Paraíba</option>
+                <option class="optClas" value="ceará">Ceará</option>
+            </select>
+
+            <!-- cidades -->
+            <label for="cidade" class="titLab">Cidade</label>
+            <select name="" id="cidade" class="selClas">
+                <option class="optClas">Selecione o estado</option>
+            </select>
+
+            <!-- serviços -->
+            <label for="tipoServ" class="titLab">Tipo de serviço</label>
+            <select name="" id="tipoServ" class="selClas">
+                <option class="optClas">Selecione o estado</option>
+                <option class="optClas" value="construçãocivil" disabled>Construção Civil</option>
+                <option class="optClas" value="soldagem" disabled>Soldagem</option>
+                <option class="optClas" value="marcenaria" disabled>Marcenaria</option>
+            </select>
+
+            <!-- turno de trabalho -->
+            <label for="turDisp" class="titLab">Turno de disponibilidade</label>
+            <select name="" id="turDisp" class="selClas">
+                <option class="optClas">Selecione o estado</option>
+                <option class="optClas" value="manhã" disabled>Manhã</option>
+                <option class="optClas" value="tarde" disabled>Tarde</option>
+                <option class="optClas" value="noite" disabled>Noite</option> 
+            </select>
+        </form>
+
+        <!-- Lista de profissionias -->
+        <div class="resulBus">
+            <!-- Filtro de relevancia -->
+            <form action="" method="post" class="filtro relev">
+                <select name="" id="filRel" class="selClas rel" onchange="mudarRel()">
+                    <option class="optClas">Relevância</option>
+                    <option class="optClas" value="maisrecentes">Mais recentes</option>
+                    <option class="optClas" value="maisantigos">Mais antigos</option>
+                </select>
+            </form>
+            <a class="btnPubli" href="#">Publicar projeto</a>
+
+            <!-- Profissional um -->
+            <div class="listaRes">
+                <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                
+                <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
+                <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
+                <span class="cidade">Recife - PE</span>
+
+                <a href="#" class="btnVisPer">Visualizar</a>
+            </div>
+
+            <!-- Profissional dois -->
+            <div class="listaRes semMar">
+                <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                
+                <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
+                <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
+                <span class="cidade">Recife - PE</span>
+
+                <a href="#" class="btnVisPer">Visualizar</a>
+            </div>
+
+            <!-- Profissional tres -->
+            <div class="listaRes semMar">
+                <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                
+                <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
+                <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
+                <span class="cidade">Recife - PE</span>
+
+                <a href="#" class="btnVisPer">Visualizar</a>
+            </div>
+
+        </div>  
+    </div>
+    <!-- FIM PESQUISA DE RESULTADOS -->
+
+    <div class="pagNav">
+        <ul>
+            <li>Página</li>
+            <li><a href="buscar.html">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+
+    <!-- INICIO FOOTER -->
+    <footer>
+        <a href="index.html" id="logoFooter">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogoFooter">Presto</span>
+        </a>
+        <span id="direitos">2011-2020 © Todos os direitos reservados. Presto® é uma marca registrada de Presto
+            Tecnologia.</span>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/logado.js"></script>
+    <script src="js/buscar.js"></script>
+</body>
+</html>
