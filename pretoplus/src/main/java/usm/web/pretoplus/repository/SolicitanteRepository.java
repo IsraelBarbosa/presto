@@ -8,5 +8,5 @@ import usm.web.pretoplus.model.Solicitante;
 
 public interface SolicitanteRepository extends JpaRepository<Solicitante, Long>{
 
-	List<Solicitante> findByNomeSolicitanteContaining(String NomeSolicitante);
+	List<Solicitante> findByPNomeSolicitanteContaining(String NomeSolicitante);
 }

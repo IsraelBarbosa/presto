@@ -10,8 +10,8 @@ public class Solicitante {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long IdSolicitante;
-	
-	private String nomeSolicitante;
+	private String PNomeSolicitante;
+	private String SNomeSolicitante;
 	private String cpf;
 	private String Email;
 	private int phone;
@@ -24,10 +24,11 @@ public class Solicitante {
 	
 	
 	
-	public Solicitante(long idSolicitante, String nomeSolicitante, String email,String cpf, String fixo, int phone) {
+	public Solicitante(long idSolicitante, String PnomeSolicitante, String SnomeSolicitante, String email,String cpf, String fixo, int phone) {
 		super();
 		this.IdSolicitante = idSolicitante;
-		this.nomeSolicitante = nomeSolicitante;
+		this.PNomeSolicitante = PnomeSolicitante;
+		this.SNomeSolicitante = SnomeSolicitante;
 		this.Email = email;
 		this.phone = phone;
 		this.cpf = cpf;
@@ -66,12 +67,20 @@ public class Solicitante {
 	public void setIdSolicitante(long idSolicitante) {
 		IdSolicitante = idSolicitante;
 	}
-	public String getNomeSolicitante() {
-		return nomeSolicitante;
+
+	public String getPNomeSolicitante() {
+		return PNomeSolicitante;
 	}
-	public void setNomeSolicitante(String NomeSolicitante) {
-		this.nomeSolicitante = NomeSolicitante;
+	public void setPNomeSolicitante(String pNomeSolicitante) {
+		PNomeSolicitante = pNomeSolicitante;
 	}
+	public String getSNomeSolicitante() {
+		return SNomeSolicitante;
+	}
+	public void setSNomeSolicitante(String sNomeSolicitante) {
+		SNomeSolicitante = sNomeSolicitante;
+	}
+	
 	public String getEmail() {
 		return Email;
 	}

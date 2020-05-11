@@ -36,7 +36,7 @@ public class PrestadorController {
 	//Método para realiazr inseção na base de dados
 	@GetMapping("/inserirprest")
 	public ModelAndView inserir() {
-		ModelAndView resultado = new ModelAndView("presto/cadastro_profissional");
+		ModelAndView resultado = new ModelAndView("presto/cadastro/cadastroprestador");
 		resultado.addObject("prestador", new Prestador());
 		return resultado;
 	}
