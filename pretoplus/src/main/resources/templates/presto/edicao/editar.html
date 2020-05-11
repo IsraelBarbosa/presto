@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<html xmlns:th="https://www.thymeleaf.org" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,29 @@
 </head>
 <body>
     <!-- INICIO HEADER -->
-    <header>
-        <a href="index.html" id="logo">
-            <img th:src="@{img/prestologo.png}" alt="Logo">
-            <span id="titLogo">Presto</span>
+    <header id="cabecalho">
+        <a th:href="@{/}" id="logo">
+            <img src="img/prestologo.png" alt="Logo">
+            <span id="titLogo1">Presto</span>
         </a>
-        <form action="pag.php" id="buscaPre">
+        <form action="pag.php" id="buscaPre1">
             <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
-        <ul id="logCad">
-            <li><a href="login.html">Login</a></li>
+        
+        <ul id="logCad1">
+            <li><a th:href="@{#}">Login</a></li>
             <li><a th:href="@{/inserirsoli}">Cadastre-se</a></li>
         </ul>
     </header>
     <!-- FIM HEADER -->
 
+    
     <!-- INICIO NAV -->
-    <nav>
+    <nav id="index">
         <ul id="menu">
             <li><a th:href="@{/}">Início</a></li>
-            <li><a th:href="@{#}">Sobre</a></li>
+            <li><a th:href="@{/sobre}">Sobre</a></li>
             <li><a th:href="@{#}">Contato</a></li>
         </ul>
     </nav>
@@ -40,10 +42,11 @@
 
     <!-- INICIO FORMCADASTRO -->
     <form action="/editarS" method="post" id="formCadastro" th:object="${solicitante}">
+    	<input type="hidden" th:field="*{IdSolicitante}">
         <label for="inpPNome" class="labClass" id="labPNome" >Primeiro nome</label>
         <label for="inpUNome" class="labClass" id="labUNome" >Último nome</label>
-        <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{NomeSolicitante}">
-        <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{NomeSolicitante}">
+        <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{PNomeSolicitante}">
+        <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{SNomeSolicitante}">
 
         <label for="inpCPF" class="labClass" id="labCPF">CPF</label>
         <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
@@ -67,8 +70,8 @@
         <br>
 
         <label for="inpSenha" class="labClass labClassSenha" id="labSenha">Senha</label>
-        <input type="password" name="" placeholder="8-25 characters" id="inpSenha" class="inpClass inpClassSenha" th:field="*{senha}">
-        <label for="inpConSenha" class="labClass labClassSenha" id="labConSenha">Confirme a senha</label>
+        <input type="password" name="" placeholder="8-25 characters" id="inpSenha" class="inpClass inpClassSenha" th:value="*{senha}">
+        <label for="inpConSenha" class="labClass labClassSenha"  id="labConSenha">Confirme a senha</label>
         <input type="password" name="" placeholder="8-25 characters" id="inpConSenha" class="inpClass inpClassSenha">
         
         <label id="containerCheck">
@@ -78,10 +81,11 @@
         <span id="descConec">Eu aceito os termos e condições</span>
 
         <div id="entrarouCadastrar">
-            <button type="submit" id="btnEntrar">Enviar</button>
+             <button type="submit" id="btnEntrar">Enviar</button>
             <span id="cadastrado">Já tem conta?</span>
             <a href="login.html" id="btnCadastro">Entrar</a>
         </div>    
+       
     </form>
     <!-- FIM FORMCADASTRO -->
 

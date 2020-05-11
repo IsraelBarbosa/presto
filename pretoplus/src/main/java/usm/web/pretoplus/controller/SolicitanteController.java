@@ -26,7 +26,7 @@ public class SolicitanteController {
 	
 	@GetMapping("/listarsoli")
 	public ModelAndView listar() {  //ALTERAR A PÁGINA ASSIM QUE RECEBER O LAYOUT
-		ModelAndView resultado = new ModelAndView("presto/listar");
+		ModelAndView resultado = new ModelAndView("presto/listar/listar");
 		List<Solicitante> solicitantes = sr.findAll();
 		resultado.addObject("solicitantes", solicitantes);
 		return resultado;
@@ -50,9 +50,9 @@ public class SolicitanteController {
 	
 	//Método para eitar
 	
-	@GetMapping("/editarS/{id}")
-	public ModelAndView editar(@PathVariable Long id) {
-		Solicitante solicitante = sr.getOne(id);
+	@GetMapping("/editarS/{IdSolicitante}")
+	public ModelAndView editar(@PathVariable("IdSolicitante") Long IdSolicitante) {
+		Solicitante solicitante = sr.getOne(IdSolicitante);
 		ModelAndView resultado = new ModelAndView("presto/edicao/editar");
 		resultado.addObject("solicitante", solicitante);
 		return resultado;
@@ -79,7 +79,7 @@ public class SolicitanteController {
 	@GetMapping({"/pesquisaNome/{nome}", "/pesquisaNome"})
 	public @ResponseBody List<Solicitante> pesquisaNome(@PathVariable Optional<String> nome){
 		if(nome.isPresent()) {
-			return sr.findByNomeSolicitanteContaining(nome.get());
+			return sr.findByPNomeSolicitanteContaining(nome.get());
 		} else {
 			return sr.findAll();
 		}

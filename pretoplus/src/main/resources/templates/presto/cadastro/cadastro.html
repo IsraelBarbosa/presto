@@ -19,7 +19,7 @@
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
         <ul id="logCad">
-            <li><a th:href="login.html">Login</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
             <li><a th:href="@{/inserirsoli}">Cadastre-se</a></li>
         </ul>
     </header>
@@ -29,7 +29,7 @@
     <nav>
         <ul id="menu">
             <li><a th:href="@{/}">Início</a></li>
-            <li><a th:href="@{#}">Sobre</a></li>
+            <li><a th:href="@{/sobre}">Sobre</a></li>
             <li><a th:href="@{#}">Contato</a></li>
         </ul>
     </nav>
@@ -39,8 +39,8 @@
     <form action="/inserirsoli" method="post" id="formCadastro" th:object="${solicitante}">
         <label for="inpPNome" class="labClass" id="labPNome" >Primeiro nome</label>
         <label for="inpUNome" class="labClass" id="labUNome" >Último nome</label>
-        <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{NomeSolicitante}">
-        <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{NomeSolicitante}">
+        <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{PNomeSolicitante}">
+        <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{SNomeSolicitante}">
 
         <label for="inpCPF" class="labClass" id="labCPF">CPF</label>
         <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
