@@ -26,15 +26,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception{
 		http.authorizeRequests()
 		.antMatchers("/").permitAll()
-//		.antMatchers("/inserirsoli").hasRole("ADMIN")
-//		.antMatchers("/listarsoli").hasRole("ADMIN")
 		.anyRequest().authenticated()
-		.and().formLogin().permitAll()
+		.and().formLogin().loginPage("/login").permitAll()
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 	
-
-
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
