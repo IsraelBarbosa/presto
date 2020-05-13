@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -15,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 public class Usuario  implements UserDetails{
 	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String login;
 		
 	private String nomeCompleto;
@@ -28,6 +31,7 @@ public class Usuario  implements UserDetails{
 			name = "usuario_id", referencedColumnName = "login"),
 			inverseJoinColumns = @JoinColumn(
 			name = "role_id", referencedColumnName = "nomeRole"))
+	
 	private List<Role> roles;
 
 	

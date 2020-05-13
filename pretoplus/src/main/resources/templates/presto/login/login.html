@@ -36,12 +36,12 @@
     <!-- FIM NAV -->
 
     <!-- INICIO FORMLOGIN -->
-    <form action="/login" method="post" id="formLogin">
+    <form th:action="@{/login}" method="post" id="formLogin">
         <label for="inpEmail" class="labClass" id="labEmail">Login</label>
-        <input type="text" name="login" placeholder="nome@exemplo.com" id="inpEmail" class="inpClass">
+        <input type="text" name="username" placeholder="nome@exemplo.com" id="inpEmail" class="inpClass">
 
         <label for="inpSenha" class="labClass" id="labSenha">Senha</label>
-        <input type="password" name="senha" placeholder="" id="inpSenha" class="inpClass">
+        <input type="password" name="password" placeholder="" id="inpSenha" class="inpClass">
 
         <label id="containerCheck">
             <input type="checkbox" name="" id="checkConect">
@@ -52,6 +52,7 @@
         <span id="descEsq"><a href="#">Esqueci a senha</a></span>
 
         <div id="entrarouCadastrar">
+        	<input type="hidden" name="_csrf" value="7516c47d-4d37-4e0b-9470-fa0c45378edd">
             <button type="submit" id="btnEntrar">Entrar</button>
             <a href="cadastro.html" id="btnCadastro">Cadastrar</a>
         </div>    
