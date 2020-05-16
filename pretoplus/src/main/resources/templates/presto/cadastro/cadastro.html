@@ -44,14 +44,17 @@
         <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{PNomeSolicitante}">
         <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{SNomeSolicitante}">
 
+        <label for="inpDate" class="labClass" id="labDate">Data de nascimento</label>
         <label for="inpCPF" class="labClass" id="labCPF">CPF</label>
-        <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
+        <input type="date" name="" id="inpDate" class="inpClass" onmouseover="mudarCorData()">
         <input type="text" name="" placeholder="CPF" id="inpCPF" class="inpClass" th:field="*{cpf}">
-        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{Email}">
 
+        <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
         <label for="inpTelF" class="labClass" id="labTelF">Telefone fixo</label>
-        <label for="inpCel" class="labClass" id="labCel">Celular</label>
+        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{Email}">
         <input type="tel" name="" placeholder="Telefone fixo" id="inpTelF" class="inpClass" th:field="*{fixo}">
+        
+        <label for="inpCel" class="labClass" id="labCel">Celular</label>
         <input type="tel" name="" placeholder="Celular" id="inpCel" class="inpClass" th:field="*{phone}">
 
         <span id="descWhats">É WhatsApp?</span>
@@ -62,13 +65,27 @@
         <label for="whatsNao" class="labWhatsClass" id="labWhatsNaoId">Não
             <input type="radio" name="whats" id="whatsNao">
             <span class="spanRadioNao"></span>
-        </label>
-        <br>
+        </label><br>
 
-        <label for="inpSenha" class="labClass labClassSenha" id="labSenha">Senha</label>
-        <input type="password" name="" placeholder="8-25 characters" id="inpSenha" class="inpClass inpClassSenha" th:field="*{senha}">
+        
+        <label for="selectEst" class="labClass" id="labEst">Estado onde reside</label>
+        <label for="selectCid" class="labClass" id="labCid">Cidade onde reside</label>
+        <!-- estados -->
+        <select name="" id="selectEst" class="selecClass" onchange="mudarEstCad(this.value)" onmouseover="mudarCorEst()">
+            <option class="optClas">Selecione o estado</option>
+            <option class="optClas" value="pernambuco">Pernambuco</option>
+            <option class="optClas" value="paraíba">Paraíba</option>
+            <option class="optClas" value="ceará">Ceará</option>
+        </select>
+        <!-- cidades -->
+        <select name="" id="selectCid" class="selecClass" onmouseover="mudarCorCid()">
+            <option class="optClas">Selecione o estado</option>
+        </select>
+
+        <br><label for="inpSenha" class="labClass labClassSenha" id="labSenha">Senha</label>
+        <input type="password" name="" placeholder="8-25 caracteres" id="inpSenha" class="inpClass inpClassSenha" th:field="*{senha}">
         <label for="inpConSenha" class="labClass labClassSenha" id="labConSenha">Confirme a senha</label>
-        <input type="password" name="" placeholder="8-25 characters" id="inpConSenha" class="inpClass inpClassSenha">
+        <input type="password" name="" placeholder="8-25 caracteres" id="inpConSenha" class="inpClass inpClassSenha">
         
         <label id="containerCheck">
             <input type="checkbox" name="" id="checkConect">
@@ -93,5 +110,7 @@
         <span id="direitos">2011-2020 © Todos os direitos reservados. Presto® é uma marca registrada de Presto Tecnologia.</span>
     </footer>
     <!-- FIM FOOTER -->
+
+    <script src="js/cadastro.js"></script>
 </body>
 </html>

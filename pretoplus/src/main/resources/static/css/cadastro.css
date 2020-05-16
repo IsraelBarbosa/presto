@@ -1,7 +1,7 @@
 /* INICIO FORMLOGIN */
 form#formCadastro {
     width: 840px;
-    height: 610px;
+    height: 720px;
     padding: 0 21px;
     border: 1px solid #D9D9DA;
     border-radius: 10px;
@@ -29,20 +29,24 @@ input#inpPNome {
 
 /* cpf email */
 label#labCPF {
-    margin: 17px 378px 5px 0;
+    margin: 17px 0px 5px 0;
 }
 
-input#inpCPF {
+label#labEmail {
+    margin: 17px 366px 5px 0
+}
+
+input#inpEmail {
     margin-right: 1.5%;
 }
 
-/* telefone celular */
+/* telefone*/
 label#labTelF {
-    margin: 17px 328px 5px 0;
+    margin: 17px 0px 5px 0;
 }
 
-input#inpTelF {
-    margin-right: 1.5%;
+label#labCel {
+    margin: 17px 362px 5px 0;
 }
 
 input.inpClass {
@@ -58,13 +62,44 @@ input.inpClass {
     font-size: 14px;
 }
 
+label#labDate {
+    margin: 17px 288px 5px 0;
+}
+
+input#inpDate {
+    margin-right: 1.5%;
+    padding: 9px 17px;
+    color: rgba(12, 12, 12, 0.45);
+}
+
+select.selecClass {
+    width: 49%;
+    padding: 10px 17px;
+    border: 1px solid #DEDEDF;
+    border-radius: 4px;
+    font-family: latoMedium;
+    display: inline-block;
+}
+
+select#selectEst {
+    color: rgba(12, 12, 12, 0.45);
+    margin-right: 1.5%;
+}
+
+select#selectCid {
+    color: rgba(12, 12, 12, 0.45);
+}
+
+label#labCid {
+    margin: 17px 0px 5px 0;
+}
 
 /* desc whats */
 span#descWhats {
     display: inline-block;
     font-family: latoBold;
     font-size: 13px;
-    margin-top: 20px;
+    margin-left: 17px;
 }
 
 label#labWhatsSimId {
@@ -271,5 +306,9 @@ a#btnCadastro {
     text-decoration: none;
     background-color: #E0E1E2;
     border-radius: 4px;
+}
+
+label#labEst {
+    margin: 17px 293px 5px 0;
 }
 /* FIM FORMLOGIN */
