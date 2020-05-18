@@ -52,8 +52,8 @@
     <!-- INICIO FORM CADASTRO PRESTADOR -->
     <form action="" method="post" id="cadPres">
         <h3 id="titCadPres">Preencha o formulário para trabalhar como prestador</h3>
-        <p id="titPro">Sua profissão</p>
-        <select name="" id="profissoes">
+        <p class="titPro">Sua profissão</p>
+        <select name="" id="profissoes" onchange="funProf()" onmouseover="mudarCorPro()">
             <option class="optPro">Selecione</option>
             <option class="optPro" value="Pedreiro">Pedreiro</option>
             <option class="optPro" value="ajundanteDePedreiro">Ajudante de pedreiro</option>
@@ -61,15 +61,34 @@
             <option class="optPro" value="MestreDeObras">Mestre de Obras</option>
         </select>
 
+        <!-- estados -->
+        <label for="estado" class="labClas">Estado onde deseja trabalhar</label><br>
+        <select name="" id="estado" class="selClas" onchange="mudarEstPres(this.value)" onmouseover="mudarCorEst()">
+            <option class="optClas">Selecione o estado</option>
+            <option class="optClas" value="pernambuco">Pernambuco</option>
+            <option class="optClas" value="paraíba">Paraíba</option>
+            <option class="optClas" value="ceará">Ceará</option>
+        </select>
+
+        <!-- cidades -->
+        <p class="titPro dois">Cidades onde deseja trabalhar</p>
+        <div class="divCidades">
+            <!-- <input type="checkbox" name="recife" id="checUm" class="classCheck">
+            <label for="checUm" class="labCid">Recife</label><br>   -->
+            <p class="titPro tres">(Escolha o estado)</p>
+        </div>
+
         <p id="titServ">Descreva quais tipos de serviços que você realiza</p>
         <textarea name="" id="descTiposSer"></textarea>
 
-        <p id="titDoc">Envie um anexo da CTPS que comprove experiência, min. 6 meses.</p>
-        <input type="file" name="" id="enviarFile" oninput="pegarNomeDoc()">
+        <div id="anexo">
+            <p id="titDoc">Envie um anexo da CTPS que comprove experiência, min. 6 meses.</p>
+            <input type="file" name="" id="enviarFile" oninput="pegarNomeDoc()">
 
-        <span id="nomeArq">Nenhum arquivo selecionado</span>
-        <button id="btnEscArq">Escolher arquivo</button>
-
+            <span id="nomeArq">Nenhum arquivo selecionado</span>
+            <button id="btnEscArq">Escolher arquivo</button>
+        </div>
+            
         <button type="submit" id="EnvCadaPres">Enviar</button>
     </form>
     <!-- FIM FORM CADASTRO PRESTADOR -->
