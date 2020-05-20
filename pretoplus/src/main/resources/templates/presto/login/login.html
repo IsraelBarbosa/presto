@@ -37,6 +37,10 @@
 
     <!-- INICIO FORMLOGIN -->
     <form th:action="@{/login}" method="post" id="formLogin">
+        <div class="lError">
+            <i class="material-icons pi">error</i>
+            <p>E-mail ou senha inválidos</p>
+        </div>
         <label for="inpEmail" class="labClass" id="labEmail">Login</label>
         <input type="text" name="username" placeholder="nome@exemplo.com" id="inpEmail" class="inpClass">
 
