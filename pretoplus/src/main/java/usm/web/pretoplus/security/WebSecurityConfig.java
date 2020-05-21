@@ -24,13 +24,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
-		http.authorizeRequests()
+		http.csrf().disable().authorizeRequests()
 		.antMatchers("/").permitAll()
+		.antMatchers("/inseriruser").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().loginPage("/login").permitAll()
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 	
+	
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception{
+//		http.csrf().disable().authorizeRequests()
+//		.antMatchers(HttpMethod.GET, "/").permitAll()
+//		.antMatchers(HttpMethod.GET, "/inserirsoli").permitAll()
+//		.antMatchers(HttpMethod.POST, "/inserirsoli").permitAll()
+//		.anyRequest().authenticated()
+//		.and().formLogin().loginPage("/login").permitAll()
+//		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+//	}
+//	
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{

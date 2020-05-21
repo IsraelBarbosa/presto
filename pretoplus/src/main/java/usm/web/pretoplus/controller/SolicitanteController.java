@@ -43,26 +43,25 @@ public class SolicitanteController {
 	}
 	
 	@PostMapping("/inserirsoli")
-	public String inserir (Solicitante solicitante) {
+	public String inserir(Solicitante solicitante) {
 		sr.save(solicitante);
 		return "redirect:/listarsoli";
 	}
-	
 	//Método para eitar
+//	
+//	@GetMapping("/editarS/{IdSolicitante}")
+//	public ModelAndView editar(@PathVariable("IdSolicitante") Long IdSolicitante) {
+//		Solicitante solicitante = sr.getOne(IdSolicitante);
+//		ModelAndView resultado = new ModelAndView("presto/edicao/editar");
+//		resultado.addObject("solicitante", solicitante);
+//		return resultado;
+//	}
 	
-	@GetMapping("/editarS/{IdSolicitante}")
-	public ModelAndView editar(@PathVariable("IdSolicitante") Long IdSolicitante) {
-		Solicitante solicitante = sr.getOne(IdSolicitante);
-		ModelAndView resultado = new ModelAndView("presto/edicao/editar");
-		resultado.addObject("solicitante", solicitante);
-		return resultado;
-	}
-	
-	@PostMapping("/editarS")
-	public String editar(Solicitante solicitante) {
-		sr.save(solicitante);
-		return "redirect:/listarsoli";
-	}
+//	@PostMapping("/editarS")
+//	public String editar(Solicitante solicitante) {
+//		sr.save(solicitante);
+//		return "redirect:/listarsoli";
+//	}
 	
 	
 	@GetMapping("/excluirS/{id}")

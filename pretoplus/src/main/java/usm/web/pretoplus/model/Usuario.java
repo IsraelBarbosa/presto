@@ -17,12 +17,18 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 public class Usuario  implements UserDetails{
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String login;
-		
-	private String nomeCompleto;
-	
 	private String senha;
+	
+	private String PNomeSolicitante;
+	private String SNomeSolicitante;
+	private String cpf;
+	private String Email;
+	private int phone;
+	private String datanas;
+	private String descricao;
+	private String local;
+	private String profissao;
 	
 	
 	
@@ -31,13 +37,32 @@ public class Usuario  implements UserDetails{
 			name = "usuario_id", referencedColumnName = "login"),
 			inverseJoinColumns = @JoinColumn(
 			name = "role_id", referencedColumnName = "nomeRole"))
-	
 	private List<Role> roles;
 
-	
-	
-	
-	
+
+	public Usuario(String login, String senha, String pNomeSolicitante, String sNomeSolicitante, String cpf,
+			String email, int phone, String datanas, String descricao, String local, String profissao) {
+		super();
+		this.login = login;
+		this.senha = senha;
+		PNomeSolicitante = pNomeSolicitante;
+		SNomeSolicitante = sNomeSolicitante;
+		this.cpf = cpf;
+		Email = email;
+		this.phone = phone;
+		this.datanas = datanas;
+		this.descricao = descricao;
+		this.local = local;
+		this.profissao = profissao;
+	}
+
+
+	public Usuario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public List<Role> getRoles() {
 		return roles;
 	}
@@ -54,13 +79,7 @@ public class Usuario  implements UserDetails{
 		this.login = login;
 	}
 
-	public String getNomeCompleto() {
-		return nomeCompleto;
-	}
-
-	public void setNomeCompleto(String nomeCompleto) {
-		this.nomeCompleto = nomeCompleto;
-	}
+	
 
 	public String getSenha() {
 		return senha;
@@ -69,6 +88,97 @@ public class Usuario  implements UserDetails{
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	
+	public String getPNomeSolicitante() {
+		return PNomeSolicitante;
+	}
+
+
+	public void setPNomeSolicitante(String pNomeSolicitante) {
+		PNomeSolicitante = pNomeSolicitante;
+	}
+
+
+	public String getSNomeSolicitante() {
+		return SNomeSolicitante;
+	}
+
+
+	public void setSNomeSolicitante(String sNomeSolicitante) {
+		SNomeSolicitante = sNomeSolicitante;
+	}
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+
+	public String getEmail() {
+		return Email;
+	}
+
+
+	public void setEmail(String email) {
+		Email = email;
+	}
+
+
+	public int getPhone() {
+		return phone;
+	}
+
+
+	public void setPhone(int phone) {
+		this.phone = phone;
+	}
+
+
+	public String getDatanas() {
+		return datanas;
+	}
+
+
+	public void setDatanas(String datanas) {
+		this.datanas = datanas;
+	}
+
+	
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+
+	public String getLocal() {
+		return local;
+	}
+
+
+	public void setLocal(String local) {
+		this.local = local;
+	}
+
+
+	public String getProfissao() {
+		return profissao;
+	}
+
+
+	public void setProfissao(String profissao) {
+		this.profissao = profissao;
+	}
+
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
