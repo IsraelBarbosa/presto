@@ -10,14 +10,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import usm.web.pretoplus.model.Prestador;
-import usm.web.pretoplus.model.Solicitante;
+import usm.web.pretoplus.model.Usuario;
 import usm.web.pretoplus.repository.PrestadorRepository;
+import usm.web.pretoplus.repository.UsuarioRepository;
 
 @Controller
 public class PrestadorController {
 	
 	@Autowired
 	private PrestadorRepository pr;
+	private UsuarioRepository ur;
 	
 	
 	
@@ -51,17 +53,17 @@ public class PrestadorController {
 	
 	//Método para eitar
 	
-		@GetMapping("/editarP/{id}")
-		public ModelAndView editar(@PathVariable Long id) {
-			Prestador prestador = pr.getOne(id);
-			ModelAndView resultado = new ModelAndView("presto/editarpres");
-			resultado.addObject("prestador", prestador);
-			return resultado;
-		}
+//		@GetMapping("/editarP/{login}")
+//		public ModelAndView editar(@PathVariable String login) {
+//			Prestador prestador = us.getOne(login);
+//			ModelAndView resultado = new ModelAndView("presto/editarpres");
+//			resultado.addObject("prestador", prestador);
+//			return resultado;
+//		}
 		
 		@PostMapping("/editarP")
-		public String editar(Prestador prestador) {
-			pr.save(prestador);
+		public String editar(Usuario user) {
+			ur.save(user);
 			return "redirect:/listarprest";
 		}
 		

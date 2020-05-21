@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html xmlns:th="https://www.thymeleaf.org" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,11 +39,11 @@
     </header>
     <!-- FIM HEADER -->
     <!-- INICIO NAV -->
-    <nav>
+     <nav id="index">
         <ul id="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a th:href="@{/}">Início</a></li>
+            <li><a th:href="@{/sobre}">Sobre</a></li>
+            <li><a th:href="@{#}">Contato</a></li>
         </ul>
     </nav>
     <!-- FIM NAV -->

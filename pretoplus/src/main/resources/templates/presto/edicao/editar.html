@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" th:href="@{/css/index.css}">
-    <link rel="stylesheet" th:href="@{/css/cadastro.css}">
+   	<link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/logado.css">
+    <link rel="stylesheet" href="/css/buscar.css">
+     
   
     
     
@@ -12,21 +15,42 @@
 </head>
 <body>
     <!-- INICIO HEADER -->
-    <header id="cabecalho">
-        <a th:href="@{/}" id="logo">
-            <img src="img/prestologo.png" alt="Logo">
-            <span id="titLogo1">Presto</span>
+      <header >
+        <a href="index.html" id="logo">
+            <img src="/img/prestologo.png" alt="Logo">
+            <span id="titLogo">Presto</span>
         </a>
-        <form action="pag.php" id="buscaPre1">
+        <form action="pag.php" id="buscaPre">
             <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
-        
-        <ul id="logCad1">
-            <li><a th:href="@{#}">Login</a></li>
-            <li><a th:href="@{/inserirsoli}">Cadastre-se</a></li>
-            <li><a th:href="@{/logout}">Logout</a></li>
+
+        <ul id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+            <li th:text="${user != null ?  '' : 'Cadastre-se'}"><a th:href="${user != null ?  '' : '@{/inseriruser}'}"> teste</a></li>
         </ul>
+        
+        <div  class="containerLog1" th:if="${user != null}">
+        	<img src="/img/cliente.png" alt="foto do perfil">
+        	<span th:text="${user != null ?  login : ''}" class="nome"><span class="cliPres"></span></span>
+        	<div class="inforPerf">
+            	<span><a th:href="@{/editarS/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<span><a th:href="@{/editarP/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<hr class="hrDiv">
+            	<span class="sobrePerfil"><a href="#">Editar perfil</a></span>
+            	<span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+            	<hr class="hrDiv">
+            	<span class="sair"><a th:href="@{/logout}">Sair</a></span>
+            	
+           	</div>
+        	
+        
+        </div>
+        <div th:unless="${user != null}">
+        
+        </div>
+     
+      
     </header>
     <!-- FIM HEADER -->
 
@@ -42,21 +66,23 @@
     <!-- FIM NAV -->
 
     <!-- INICIO FORMCADASTRO -->
-    <form action="/editarS" method="post" id="formCadastro" th:object="${solicitante}">
-    	<input type="hidden" th:field="*{IdSolicitante}">
+    <form action="/inseriruser" method="post" id="formCadastro" th:object="${user}">
         <label for="inpPNome" class="labClass" id="labPNome" >Primeiro nome</label>
         <label for="inpUNome" class="labClass" id="labUNome" >Último nome</label>
         <input type="text" name="" placeholder="Primeiro nome" id="inpPNome" class="inpClass" th:field="*{PNomeSolicitante}">
         <input type="text" name="" placeholder="Último nome" id="inpUNome" class="inpClass" th:field="*{SNomeSolicitante}">
 
+        <label for="inpDate" class="labClass" id="labDate">Data de nascimento</label>
         <label for="inpCPF" class="labClass" id="labCPF">CPF</label>
-        <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
+        <input type="date" name="" id="inpDate" class="inpClass" th:field="*{datanas}" onmouseover="mudarCorData()">
         <input type="text" name="" placeholder="CPF" id="inpCPF" class="inpClass" th:field="*{cpf}">
-        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{Email}">
 
-        <label for="inpTelF" class="labClass" id="labTelF">Telefone fixo</label>
+        <label for="inpEmail" class="labClass" id="labEmail">E-mail</label>
+        <label for="inpTelF" class="labClass" id="labTelF">Login</label>
+        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{Email}">
+        <input type="tel" name="" placeholder="Telefone fixo" id="inpTelF" class="inpClass" th:field="*{login}">
+        
         <label for="inpCel" class="labClass" id="labCel">Celular</label>
-        <input type="tel" name="" placeholder="Telefone fixo" id="inpTelF" class="inpClass" th:field="*{fixo}">
         <input type="tel" name="" placeholder="Celular" id="inpCel" class="inpClass" th:field="*{phone}">
 
         <span id="descWhats">É WhatsApp?</span>
@@ -67,13 +93,27 @@
         <label for="whatsNao" class="labWhatsClass" id="labWhatsNaoId">Não
             <input type="radio" name="whats" id="whatsNao">
             <span class="spanRadioNao"></span>
-        </label>
-        <br>
+        </label><br>
 
-        <label for="inpSenha" class="labClass labClassSenha" id="labSenha">Senha</label>
-        <input type="password" name="" placeholder="8-25 characters" id="inpSenha" class="inpClass inpClassSenha" th:value="*{senha}">
-        <label for="inpConSenha" class="labClass labClassSenha"  id="labConSenha">Confirme a senha</label>
-        <input type="password" name="" placeholder="8-25 characters" id="inpConSenha" class="inpClass inpClassSenha">
+        
+        <label for="selectEst" class="labClass" id="labEst">Estado onde reside</label>
+        <label for="selectCid" class="labClass" id="labCid">Cidade onde reside</label>
+        <!-- estados -->
+        <select name="" th:field="*{local}" id="selectEst" class="selecClass" onchange="mudarEstCad(this.value)" onmouseover="mudarCorEst()">
+            <option class="optClas"  value=" ">Selecione o estado</option>
+            <option class="optClas" value="pernambuco">Pernambuco</option>
+            <option class="optClas" value="paraíba">Paraíba</option>
+            <option class="optClas" value="ceará">Ceará</option>
+        </select>
+        <!-- cidades -->
+        <select name="" id="selectCid" class="selecClass" onmouseover="mudarCorCid()">
+            <option class="optClas">Selecione o estado</option>
+        </select>
+
+        <br><label for="inpSenha" class="labClass labClassSenha" id="labSenha">Senha</label>
+        <input type="password" name="" placeholder="8-25 caracteres" id="inpSenha" class="inpClass inpClassSenha" th:field="*{senha}">
+        <label for="inpConSenha" class="labClass labClassSenha" id="labConSenha">Confirme a senha</label>
+        <input type="password" name="" placeholder="8-25 caracteres" id="inpConSenha" class="inpClass inpClassSenha">
         
         <label id="containerCheck">
             <input type="checkbox" name="" id="checkConect">
@@ -82,11 +122,10 @@
         <span id="descConec">Eu aceito os termos e condições</span>
 
         <div id="entrarouCadastrar">
-             <button type="submit" id="btnEntrar">Enviar</button>
+            <button type="submit" id="btnEntrar">Enviar</button>
             <span id="cadastrado">Já tem conta?</span>
             <a href="login.html" id="btnCadastro">Entrar</a>
         </div>    
-       
     </form>
     <!-- FIM FORMCADASTRO -->
 

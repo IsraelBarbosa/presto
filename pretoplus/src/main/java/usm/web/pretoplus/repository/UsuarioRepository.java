@@ -1,9 +1,14 @@
+
 package usm.web.pretoplus.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import usm.web.pretoplus.model.Usuario;
 
-public interface UsuarioRepository extends CrudRepository<Usuario, String>{
+public interface UsuarioRepository extends JpaRepository<Usuario, String>{
 	Usuario findByLogin(String login);
+
+	
 }

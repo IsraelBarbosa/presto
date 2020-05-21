@@ -1,13 +1,17 @@
+
 <!DOCTYPE html>
+
 <html xmlns:th="https://www.thymeleaf.org" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="css/logado.css">
+    <link rel="stylesheet" href="css/buscar.css">
+	
     
     <title>Presto</title>
-</head>
+</head> 
 <body>
     <!-- INICIO HEADER -->
     <header >
@@ -19,10 +23,38 @@
             <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
-        <ul id="logCad">
-            <li><a th:href="@{/listarsoli}">Listar</a></li>
-            <li><a th:href="@{/inserirsoli}">Cadastre-se</a></li>
+
+        <ul th:if="${user != null}" id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+             <li><a th:href="${user != null ?  '' : '@{/inseriruser}'}"></a></li>
         </ul>
+        
+         <ul th:unless="${user != null}" id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+            <li><a th:href="@{/inseriruser}">Cadastre-se</a></li>
+        </ul>
+       
+                  <!-- Container logado -->
+   
+   		<div  class="containerLog1" th:if="${user != null}">
+   			<img src="img/cliente.png" alt="foto do perfil">
+            <span th:text="${user != null ?  user.getName() : ''}" class="nome"><span class="cliPres"></span></span>
+             <div class="inforPerf">
+                <span><a th:href="@{/editarS/{login}(login=${user.getName()})}"><span class="infCliPres" th:text="${user != null ?  user.getName()+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+                
+                <span><a th:href="@{/editarP/{login}(login=${user.getName()})}"><span class="infCliPres" th:text="${user != null ?  user.getName()+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+                <hr class="hrDiv">
+                <span class="sobrePerfil"><a th:href="@{/editarS/{login}(login=${user.getName()})}">Editar perfil</a></span>
+                <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+                <hr class="hrDiv">
+                <span class="sair"><a th:href="@{/logout}">Sair</a></span>
+            </div>
+        </div>
+        <div th:unless="${user != null}">
+        
+        </div>
+
+          
     </header>
     <!-- FIM HEADER -->
 
@@ -37,8 +69,11 @@
     </nav>
     <!-- FIM NAV -->
 
+	
+	
 
-	<h2>Vem pra cá abestado</h2>
+
+
 	<img style="align: center;" src="https://i.em.com.br/CCevoHW-GpCKN132ROUvF73P3h4=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2017/08/04/889330/20170804113056458771a.jpg">
 		
 	<!-- Compiled and minified JavaScript -->
