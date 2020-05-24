@@ -107,10 +107,12 @@ function mudarCorData() {
 // MUDAR A COR ESTADO
 function mudarCorEst() {
     document.getElementById("selectEst").style.color = "black";
+    too[8].classList.remove("toolAparece");
 }
 
 // MUDAR A COR CIDADE
 function mudarCorCid() {
     document.getElementById("selectCid").style.color = "black"; 
+    too[9].classList.remove("toolAparece");
 }
 

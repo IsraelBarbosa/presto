@@ -12,6 +12,7 @@ label.labClass {
     display: inline-block;
     font-family: latoBold;
     font-size: 13px;
+    position: relative;
 }
 
 /* nome */
@@ -20,6 +21,7 @@ label#labPNome {
 }
 
 label#labUNome {
+    
     margin: 15px 0 5px 0;
 }
 
@@ -79,6 +81,7 @@ select.selecClass {
     border-radius: 4px;
     font-family: latoMedium;
     display: inline-block;
+    position: relative;
 }
 
 select#selectEst {
@@ -100,6 +103,7 @@ span#descWhats {
     font-family: latoBold;
     font-size: 13px;
     margin-left: 17px;
+    position: relative;
 }
 
 label#labWhatsSimId {
