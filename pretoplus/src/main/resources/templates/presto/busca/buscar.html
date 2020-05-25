@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/logado.css">
-    <link rel="stylesheet" href="css/buscar.css">
+	<link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/logado.css">
+    <link rel="stylesheet" href="/css/buscar.css">
+    
     <title>Buscar</title>
 </head>
 
 <body>
     <!-- INICIO HEADER -->
-    <header>
+     <header >
         <a href="index.html" id="logo">
-            <img src="img/prestologo.png" alt="Logo">
+            <img src="/img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
         </a>
         <form action="pag.php" id="buscaPre">
@@ -22,21 +24,32 @@
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
 
-        <!-- Container logado -->
-        <div class="containerLog">
-            <img src="img/cliente.png" alt="foto do perfil">
-            <span class="nome">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
-            <div class="inforPerf">
-                <span class="infCliPres" onclick="mudarStatCli()">Felipe da Silva <span class="cliPres">(Cliente)</span></span>
-                <span class="infCliPres" onclick="mudarStatPrest()"><a href="cadastroprestador.html">Felipe da Silva <span class="cliPres">(Prestador)</span></a></span>
-                <hr class="hrDiv">
-                <span class="sobrePerfil"><a href="#">Editar perfil</a></span>
-                <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
-                <hr class="hrDiv">
-                <span class="sair"><a href="#">Sair</a></span>
-            </div>
+        <ul id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+            <li th:text="${user != null ?  '' : 'Cadastre-se'}"><a th:href="${user != null ?  '' : '@{/inseriruser}'}"> teste</a></li>
+        </ul>
+        
+        <div  class="containerLog1" th:if="${user != null}">
+        	<img src="/img/cliente.png" alt="foto do perfil">
+        	<span th:text="${user != null ?  login : ''}" class="nome"><span class="cliPres"></span></span>
+        	<div class="inforPerf">
+            	<span><a th:href="@{/editarS/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<span><a th:href="@{/editarP/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<hr class="hrDiv">
+            	<span class="sobrePerfil"><a href="#">Editar perfil</a></span>
+            	<span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+            	<hr class="hrDiv">
+            	<span class="sair"><a th:href="@{/logout}">Sair</a></span>
+            	
+           	</div>
+        	
+        
         </div>
-    </header>
+        <div th:unless="${user != null}">
+        
+        </div>
+       </header>
+    
     <!-- FIM HEADER -->
     <!-- INICIO NAV -->
      <nav id="index">
@@ -94,6 +107,7 @@
             </select>
         </form>
 
+
         <!-- Lista de profissionias -->
         <div class="resulBus">
             <!-- Filtro de relevancia -->
@@ -107,15 +121,14 @@
             <a class="btnPubli" href="#">Publicar projeto</a>
 
             <!-- Profissional um -->
-            <div class="listaRes">
-                <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
-                <span class="clasEstr">Classificação
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                </span>
+            <div class="listaRes" th:each="user: ${user}">
+                <span th:text="${user.login}" class="nomeEnc"><span th:text="${user.profissao}" class="proEnc"></span> - João da Silva dos Santos</span>
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
                 
                 <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
                 <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
@@ -127,14 +140,13 @@
             <!-- Profissional dois -->
             <div class="listaRes semMar">
                 <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
-                <span class="clasEstr">Classificação
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                </span>
-
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                
                 <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
                 <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
                 <span class="cidade">Recife - PE</span>
@@ -145,14 +157,13 @@
             <!-- Profissional tres -->
             <div class="listaRes semMar">
                 <span class="nomeEnc"><span class="proEnc">Pedreiro</span> - João da Silva dos Santos</span>
-                <span class="clasEstr">Classificação
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                    <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
-                </span>
-
+                <span class="clasEstr">Classificação</span>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
+                
                 <span class="desProEnc">Trabalho com construção de casas há mais de cinco anos.</span>
                 <i class='fas fa-map-marker-alt' style="margin-top: 15px;"></i>
                 <span class="cidade">Recife - PE</span>

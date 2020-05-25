@@ -27,6 +27,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		http.csrf().disable().authorizeRequests()
 		.antMatchers("/").permitAll()
 		.antMatchers("/inseriruser").permitAll()
+		.antMatchers("/cadsucess").permitAll()
+		.antMatchers("/caderror").permitAll()
+		.antMatchers("/sobre").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().loginPage("/login").permitAll()
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
@@ -53,6 +56,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override
 	public void configure(WebSecurity web) throws Exception{
-		web.ignoring().antMatchers("/materialize/**", "/css/**", "/img/**");
+		web.ignoring().antMatchers("/materialize/**", "/css/**", "/img/**", "/js/**");
 	}
 }

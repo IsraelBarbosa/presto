@@ -111,7 +111,6 @@ div.listaRes {
     margin-top: 13px;
     padding: 25px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.417);
-    position: relative;
 }
 
 div.semMar {
@@ -132,12 +131,10 @@ span.clasEstr {
     font-family: LatoRegular;
     font-size: 15px;
     color: #000000DE;
-    position: absolute;
-    top: 20px;
-    left: 449px;
+    margin-left: 213px;
 }
 
-div.listaRes i.fa-star {
+div.listaRes > i.fa-star {
     margin-left: -5px;
 }
 
