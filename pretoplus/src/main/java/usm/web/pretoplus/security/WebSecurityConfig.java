@@ -27,24 +27,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		http.csrf().disable().authorizeRequests()
 		.antMatchers("/").permitAll()
 		.antMatchers("/inseriruser").permitAll()
+		.antMatchers("/cadsucess").permitAll()
+		.antMatchers("/caderror").permitAll()
+		.antMatchers("/sobre").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().loginPage("/login").permitAll()
 		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 	
 	
-//	@Override
-//	protected void configure(HttpSecurity http) throws Exception{
-//		http.csrf().disable().authorizeRequests()
-//		.antMatchers(HttpMethod.GET, "/").permitAll()
-//		.antMatchers(HttpMethod.GET, "/inserirsoli").permitAll()
-//		.antMatchers(HttpMethod.POST, "/inserirsoli").permitAll()
-//		.anyRequest().authenticated()
-//		.and().formLogin().loginPage("/login").permitAll()
-//		.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
-//	}
-//	
-	
+
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
       		auth.userDetailsService(userDetailsService)
@@ -53,6 +45,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override
 	public void configure(WebSecurity web) throws Exception{
-		web.ignoring().antMatchers("/materialize/**", "/css/**", "/img/**");
+		web.ignoring().antMatchers("/materialize/**", "/css/**", "/img/**", "/js/**");
 	}
 }

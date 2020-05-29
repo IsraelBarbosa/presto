@@ -14,7 +14,7 @@ public class Solicitante {
 	private String SNomeSolicitante;
 	private String cpf;
 	private String Email;
-	private int phone;
+	private String phone;
 	private String fixo;
 	private String senha;
 	private String datanas;
@@ -24,7 +24,7 @@ public class Solicitante {
 	
 	
 	
-	public Solicitante(long idSolicitante, String PnomeSolicitante, String SnomeSolicitante, String email,String cpf, String fixo, int phone) {
+	public Solicitante(long idSolicitante, String PnomeSolicitante, String SnomeSolicitante, String email,String cpf, String fixo, String phone) {
 		super();
 		this.IdSolicitante = idSolicitante;
 		this.PNomeSolicitante = PnomeSolicitante;
@@ -87,10 +87,10 @@ public class Solicitante {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getDatanas() {

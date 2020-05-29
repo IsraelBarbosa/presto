@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/logado.css">
+    <link rel="stylesheet" href="css/buscar.css">
     <title>Sobre</title>
 </head>
 
 <body>
     <!-- INICIO HEADER -->
-    <header>
+     <header >
         <a href="index.html" id="logo">
             <img src="img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
@@ -20,10 +22,39 @@
             <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
-        <ul id="logCad">
-            <li><a th:href="@{/}">Login</a></li>
-            <li><a th:href="@{/inseriruser}">Cadastre-se</a></li>
+
+        <ul th:if="${user != null}" id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+             <li><a th:href="${user != null ?  '' : '@{/inseriruser}'}"></a></li>
         </ul>
+        
+         <ul th:unless="${user != null}" id="logCad">
+            <li><a th:href="@{/busca}">Buscar</a></li>
+            <li><a th:href="@{/inseriruser}">Cadastre-se</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+        </ul>
+       
+                  <!-- Container logado -->
+   
+   		<div  class="containerLog1" th:if="${user != null}">
+   			<img src="img/cliente.png" alt="foto do perfil">
+            <span th:text="${user != null ?  user.getName() : ''}" class="nome"><span class="cliPres"></span></span>
+             <div class="inforPerf">
+                <span><a th:href="@{/editarS/{login}(login=${user.getName()})}"><span class="infCliPres" th:text="${user != null ?  user.getName()+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+                
+                <span><a th:href="@{/editarP/{login}(login=${user.getName()})}"><span class="infCliPres" th:text="${user != null ?  user.getName()+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+                <hr class="hrDiv">
+                <span class="sobrePerfil"><a th:href="@{/editarS/{login}(login=${user.getName()})}">Editar perfil</a></span>
+                <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
+                <hr class="hrDiv">
+                <span class="sair"><a th:href="@{/logout}">Sair</a></span>
+            </div>
+        </div>
+        <div th:unless="${user != null}">
+        
+        </div>
+
+          
     </header>
     <!-- FIM HEADER -->
 

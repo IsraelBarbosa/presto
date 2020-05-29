@@ -22,7 +22,6 @@
         <ul id="logCad">
             <li><a th:href="@{/login}">Login</a></li>
             <li><a th:href="@{/inserirsoli}">Cadastre-se</a></li>
-            <li><a th:href="@{/logout}">Logout</a></li>
             
         </ul>
     </header>
@@ -64,8 +63,8 @@
         <label for="inpTelF" class="labClass" id="labTelF">Login
             <span class="tooltip"></span>
         </label>
-        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{Email}" oninput="validarEMAIL()">
-        <input type="tel" name="" placeholder="Telefone fixo" id="inpTelF" class="inpClass" th:field="*{login}" onfocus="validarTel()">
+        <input type="email" name="" placeholder="Email" id="inpEmail" class="inpClass" th:field="*{email}" oninput="validarEMAIL()">
+        <input type="text" name="" placeholder="Login"  class="inpClass" th:field="*{login}" >
         
         <label for="inpCel" class="labClass" id="labCel">Celular
             <span class="tooltip"></span>
