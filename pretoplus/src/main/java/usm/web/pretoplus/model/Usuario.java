@@ -28,6 +28,7 @@ public class Usuario  implements UserDetails{
 	private String descricao;
 	private String local;
 	private String profissao;
+	private String tipo;
 	
 	
 	
@@ -79,6 +80,7 @@ public class Usuario  implements UserDetails{
 		this.login = login;
 	}
 
+	
 	
 
 	public String getSenha() {
@@ -172,6 +174,16 @@ public class Usuario  implements UserDetails{
 
 	public String getProfissao() {
 		return profissao;
+	}
+
+	
+	public String getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 

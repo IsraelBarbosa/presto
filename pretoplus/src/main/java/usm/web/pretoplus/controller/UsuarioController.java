@@ -32,6 +32,7 @@ public class UsuarioController {
 	@PostMapping("/inseriruser")
 	public String inserir (Usuario user) {
 		user.setSenha(new BCryptPasswordEncoder().encode(user.getPassword()));
+		user.setTipo("cliente");
 		user.setemail(user.getemail());
 		ur.save(user);
 		return "redirect:/cadsucess";
@@ -54,6 +55,12 @@ public class UsuarioController {
 	public String editarus (Usuario user) {
 		user.setSenha(new BCryptPasswordEncoder().encode(user.getPassword()));
 		user.setemail(user.getemail());
+		
+		if(user.getTipo() == "cliente") {
+			user.setTipo("cliente");
+		} else if (user.getTipo().toString() == "prestador") {
+			user.setTipo("prestador");
+		}
 		ur.save(user);
 		return "redirect:/";
 	}
@@ -67,6 +74,14 @@ public class UsuarioController {
 		ModelAndView resultado = new ModelAndView("presto/cadastro/cadprest");
 		resultado.addObject("user", usuario);
 		return resultado;
+	}
+	
+	@PostMapping("/cad")
+	public String edits(Usuario user) {
+		user.setemail(user.getemail());
+		user.setTipo("prestador");
+		ur.save(user);
+		return "redirect:/";
 	}
 	
 
@@ -97,13 +112,7 @@ public class UsuarioController {
 	
 
 	
-	@PostMapping("/cad")
-	public String edits(Usuario user) {
-		user.setemail(user.getemail());
-		ur.save(user);
-		return "redirect:/";
-	}
-	
+
 	
 	//Iniciando o método de buscar pelo input
 	

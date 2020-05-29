@@ -19,8 +19,14 @@
             <img src="img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
         </a>
-        <form th:action="@{/pesquisaProfissao/{profissao}(profissao=${user.getName()})}" th:object="${user}" id="buscaPre">
+        <!-- Verificações feitas com tymeleaf para saber se o usuário está logado ou não  -->
+        <form th:if="${user != null}"  th:action="@{/pesquisaProfissao/{profissao}(profissao=${user.getName()})}" th:object="${user}" id="buscaPre">
             <input type="search" name="search"  placeholder="Busque por profissionais..." id="inpSearch">
+            <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
+        </form>
+        
+        <form th:unless="${user != null}" action="pag.php" id="buscaPre">
+            <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
 
@@ -72,10 +78,12 @@
 
 	
 	
+	<br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/>
 
 
-
-	<img style="align: center;" src="https://i.em.com.br/CCevoHW-GpCKN132ROUvF73P3h4=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2017/08/04/889330/20170804113056458771a.jpg">
 		
 	<!-- Compiled and minified JavaScript -->
 

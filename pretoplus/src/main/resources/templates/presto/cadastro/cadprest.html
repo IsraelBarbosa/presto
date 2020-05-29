@@ -5,17 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}">
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}">
     <link rel="stylesheet" th:href="@{/css/index.css}">
     <link rel="stylesheet" th:href="@{/css/logado.css}">
    	<link rel="stylesheet" th:href="@{/css/cadastrosucesso.css}">
   	<link rel="stylesheet" th:href="@{/css/cadastroprestador.css}">
-    <title>Pedreiro</title>
+    <title>Cadastro prestador</title>
 </head>
 
 <body>
     <!-- INICIO HEADER -->
-    <header >
+    <header>
         <a href="index.html" id="logo">
             <img src="/img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
@@ -76,6 +76,7 @@
         <h3 id="titCadPres">Preencha o formulário para trabalhar como prestador</h3>
         <p class="titPro">Sua profissão</p>
        
+        <input type="hidden" name="" placeholder="Login"  class="inpClass" th:field="*{tipo}" >
         <select name="" th:field="*{profissao}" id="profissoes" onchange="funProf()" onmouseover="mudarCorPro()">
             <option class="optPro" value="teste">Selecione</option>
             <option class="optPro" value="Pedreiro" >Pedreiro</option>
@@ -128,7 +129,7 @@
     <!-- FIM FOOTER -->
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="js/cadastroprestador.js"></script>
-    <script src="js/logado.js"></script>
+    <script th:src="@{js/cadastroprestador.js}"></script>
+    <script th:src="@{js/logado.js}"></script>
 </body>
 </html>
