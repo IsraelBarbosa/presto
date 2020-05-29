@@ -4,8 +4,6 @@ import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -16,15 +14,16 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 public class Usuario  implements UserDetails{
+
 	@Id
+	private String email;
+	
 	private String login;
 	private String senha;
-	
 	private String PNomeSolicitante;
 	private String SNomeSolicitante;
 	private String cpf;
-	private String Email;
-	private int phone;
+	private String phone;
 	private String datanas;
 	private String descricao;
 	private String local;
@@ -34,21 +33,22 @@ public class Usuario  implements UserDetails{
 	
 	@ManyToMany
 	@JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(
-			name = "usuario_id", referencedColumnName = "login"),
+			name = "usuario_id", referencedColumnName = "email"),
 			inverseJoinColumns = @JoinColumn(
 			name = "role_id", referencedColumnName = "nomeRole"))
+	
 	private List<Role> roles;
 
 
 	public Usuario(String login, String senha, String pNomeSolicitante, String sNomeSolicitante, String cpf,
-			String email, int phone, String datanas, String descricao, String local, String profissao) {
+			String email, String phone, String datanas, String descricao, String local, String profissao) {
 		super();
 		this.login = login;
 		this.senha = senha;
-		PNomeSolicitante = pNomeSolicitante;
-		SNomeSolicitante = sNomeSolicitante;
+		this.PNomeSolicitante = pNomeSolicitante;
+		this.SNomeSolicitante = sNomeSolicitante;
 		this.cpf = cpf;
-		Email = email;
+		this.email = email;
 		this.phone = phone;
 		this.datanas = datanas;
 		this.descricao = descricao;
@@ -119,22 +119,22 @@ public class Usuario  implements UserDetails{
 	}
 
 
-	public String getEmail() {
-		return Email;
+	public String getemail() {
+		return email;
 	}
 
 
-	public void setEmail(String email) {
-		Email = email;
+	public void setemail(String email) {
+		this.email = email;
 	}
 
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -195,7 +195,7 @@ public class Usuario  implements UserDetails{
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return this.login;
+		return this.email;
 	}
 
 	@Override

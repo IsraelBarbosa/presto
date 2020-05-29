@@ -1,8 +1,8 @@
 package usm.web.pretoplus.controller;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 import usm.web.pretoplus.model.Usuario;
 import usm.web.pretoplus.repository.UsuarioRepository;
 
@@ -33,31 +32,44 @@ public class UsuarioController {
 	@PostMapping("/inseriruser")
 	public String inserir (Usuario user) {
 		user.setSenha(new BCryptPasswordEncoder().encode(user.getPassword()));
+		user.setemail(user.getemail());
 		ur.save(user);
 		return "redirect:/cadsucess";
 	}
 	
 	
+	
 	//Método para relizar a edição do cadastro
 	
-	@GetMapping("/editarS/{login}")
-	public ModelAndView edit(@PathVariable String login) {
-		Usuario usuario = ur.getOne(login);
+	@GetMapping("/editarS/{email}")
+	public ModelAndView edit(@PathVariable String email) {
+		Usuario usuario = ur.getOne(email);
 		ModelAndView resultado = new ModelAndView("presto/edicao/editar");
 		resultado.addObject("user", usuario);
 		return resultado;
 	}
 	
+	//save edição
+	@PostMapping("/edit")
+	public String editarus (Usuario user) {
+		user.setSenha(new BCryptPasswordEncoder().encode(user.getPassword()));
+		user.setemail(user.getemail());
+		ur.save(user);
+		return "redirect:/";
+	}
+	
 	
 	//Método para cadastrar prestador
 	
-	@GetMapping("/editarP/{login}")
-	public ModelAndView editar(@PathVariable String login) {
-		Usuario usuario = ur.getOne(login);
+	@GetMapping("/editarP/{email}")
+	public ModelAndView editar(@PathVariable String email) {
+		Usuario usuario = ur.getOne(email);
 		ModelAndView resultado = new ModelAndView("presto/cadastro/cadprest");
 		resultado.addObject("user", usuario);
 		return resultado;
 	}
+	
+
 	
 	
 	//Método de erro no cadastro
@@ -72,24 +84,43 @@ public class UsuarioController {
 		return "/presto/cadastro/cadastrosucesso";
 	}
 	
-	
-	
+
 	//Método da listagem
 	@GetMapping("/busca")
-	public ModelAndView busca() {  //ALTERAR A PÁGINA ASSIM QUE RECEBER O LAYOUT
+	public ModelAndView busca(Authentication authentication) {  //ALTERAR A PÁGINA ASSIM QUE RECEBER O LAYOUT
 		ModelAndView resultado = new ModelAndView("presto/busca/buscar");
 		List<Usuario> usuarios = ur.findAll();
+		resultado.addObject("log", authentication);
 		resultado.addObject("user", usuarios);
 		return resultado;
 	}
 	
-	
+
 	
 	@PostMapping("/cad")
-	public String editar(Usuario user) {
+	public String edits(Usuario user) {
+		user.setemail(user.getemail());
 		ur.save(user);
 		return "redirect:/";
 	}
+	
+	
+	//Iniciando o método de buscar pelo input
+	
+	@GetMapping("/pesquisaProfissao/{profissao}")
+	public ModelAndView findpro(@PathVariable String profissao){
+		ModelAndView resultado = new ModelAndView("presto/busca/buscar");
+		List<Usuario> user = ur.findByprofissao(profissao);
+		resultado.addObject("user", user);
+		return resultado;
+		
+	}
+	
+	//Método se pesquisa pelo input de buscar
+	
+	
+	
+	
 	
 }
 

@@ -13,7 +13,7 @@
 
 <body>
     <!-- INICIO HEADER -->
-    <header >
+     <header >
         <a href="index.html" id="logo">
             <img src="img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
@@ -31,6 +31,7 @@
          <ul th:unless="${user != null}" id="logCad">
             <li><a th:href="@{/busca}">Buscar</a></li>
             <li><a th:href="@{/inseriruser}">Cadastre-se</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
         </ul>
        
                   <!-- Container logado -->

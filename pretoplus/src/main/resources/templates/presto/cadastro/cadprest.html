@@ -32,10 +32,10 @@
         
         <div  class="containerLog1" th:if="${user != null}">
         	<img src="/img/cliente.png" alt="foto do perfil">
-        	<span th:text="${user != null ?  login : ''}" class="nome"><span class="cliPres"></span></span>
+        	<span th:text="${user != null ?  user.login : ''}" class="nome"><span class="cliPres"></span></span>
         	<div class="inforPerf">
-            	<span><a th:href="@{/editarS/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
-            	<span><a th:href="@{/editarP/{login}(login=*{login})}"><span class="infCliPres" th:text="${user != null ?  login+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<span><a th:href="@{/editarS/{login}(login=*{email})}"><span class="infCliPres" th:text="${user != null ?  user.login+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
+            	<span><a th:href="@{/editarP/{login}(login=*{email})}"><span class="infCliPres" th:text="${user != null ?  user.login+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
             	<hr class="hrDiv">
             	<span class="sobrePerfil"><a href="#">Editar perfil</a></span>
             	<span class="sobrePerfil"><a href="#">Meu perfil</a></span>
@@ -49,7 +49,9 @@
         <div th:unless="${user != null}">
         
         </div>
-       </header>
+     
+      
+    </header>
     <!-- FIM HEADER -->
     <!-- INICIO NAV -->
     <nav>
@@ -68,7 +70,7 @@
         <input type="hidden" th:field="*{cpf}">
         <input type="hidden" th:field="*{PNomeSolicitante}">
         <input type="hidden" th:field="*{SNomeSolicitante}">  
-        <input type="hidden" th:field="*{Email}">
+        <input type="hidden" th:field="*{email}">
         <input type="hidden" th:field="*{phone}">
         <input type="hidden" th:field="*{datanas}">  
         <h3 id="titCadPres">Preencha o formulário para trabalhar como prestador</h3>

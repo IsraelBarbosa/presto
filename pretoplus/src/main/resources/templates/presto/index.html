@@ -19,8 +19,8 @@
             <img src="img/prestologo.png" alt="Logo">
             <span id="titLogo">Presto</span>
         </a>
-        <form action="pag.php" id="buscaPre">
-            <input type="search" name="search" placeholder="Busque por profissionais..." id="inpSearch">
+        <form th:action="@{/pesquisaProfissao/{profissao}(profissao=${user.getName()})}" th:object="${user}" id="buscaPre">
+            <input type="search" name="search"  placeholder="Busque por profissionais..." id="inpSearch">
             <button type="submit" id="busca"><img src="img/icon/search-solid.svg" alt="Buscar"></button>
         </form>
 
@@ -32,6 +32,7 @@
          <ul th:unless="${user != null}" id="logCad">
             <li><a th:href="@{/busca}">Buscar</a></li>
             <li><a th:href="@{/inseriruser}">Cadastre-se</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
         </ul>
        
                   <!-- Container logado -->
