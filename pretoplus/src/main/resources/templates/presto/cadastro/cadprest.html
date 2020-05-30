@@ -76,6 +76,7 @@
         <h3 id="titCadPres">Preencha o formulário para trabalhar como prestador</h3>
         <p class="titPro">Sua profissão</p>
        
+        <input type="hidden" name="" placeholder="Login"  class="inpClass" th:field="*{tipo}" >
         <select name="" th:field="*{profissao}" id="profissoes" onchange="funProf()" onmouseover="mudarCorPro()">
             <option class="optPro" value="teste">Selecione</option>
             <option class="optPro" value="Pedreiro" >Pedreiro</option>

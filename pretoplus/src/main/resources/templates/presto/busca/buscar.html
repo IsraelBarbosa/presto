@@ -129,7 +129,9 @@
 
             <!-- Profissional um -->
             <div class="listaRes" th:each="user: ${user}">
-                <span th:text="${user.login}" class="nomeEnc">  </span> <span>   </span> <span th:text="${user.profissao}" class="proEnc"> </span>
+
+                <span>   </span> <span th:text="${user.profissao}" class="proEnc"> </span> <span th:text="${user.login}" class="nomeEnc">  </span> 
+
                 <span class="clasEstr">Classificação
                     <i class='far fa-star' style='font-size:20px; color: #FBBD08; margin-left: 5px;'></i>
                     <i class='far fa-star' style='font-size:20px; color: #FBBD08;'></i>
