@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/tooltipCadastro.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -36,12 +37,16 @@
     <!-- FIM NAV -->
 
     <!-- INICIO FORMLOGIN -->
-    <form th:action="@{/login}" method="post" id="formLogin">
-        <label for="inpEmail" class="labClass" id="labEmail">Login</label>
-        <input type="text" name="username" placeholder="nome@exemplo.com" id="inpEmail" class="inpClass">
+    <form th:action="@{/login}" method="post" id="formLogin" onsubmit="return validarLogin()">
+        <label for="inpEmail" class="labClass" id="labEmail">Login
+            <span class="tooltip"></span>
+        </label>
+        <input type="text" name="username" placeholder="nome@exemplo.com" id="inpEmail" class="inpClass" oninput="validarEMAIL()">
 
-        <label for="inpSenha" class="labClass" id="labSenha">Senha</label>
-        <input type="password" name="password" placeholder="" id="inpSenha" class="inpClass">
+        <label for="inpSenha" class="labClass" id="labSenha">Senha
+            <span class="tooltip"></span>
+        </label>
+        <input type="password" name="password" placeholder="" id="inpSenha" class="inpClass" oninput="validarSenha()">
 
         <label id="containerCheck">
             <input type="checkbox" name="" id="checkConect">
@@ -68,5 +73,7 @@
         <span id="direitos">2011-2020 © Todos os direitos reservados. Presto® é uma marca registrada de Presto Tecnologia.</span>
     </footer>
     <!-- FIM FOOTER -->
+
+    <script src="js/login.js"></script>
 </body>
 </html>
