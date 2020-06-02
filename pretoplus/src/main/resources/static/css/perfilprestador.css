@@ -1,0 +1,436 @@
+/* INICIO SECAO PERFIL PRESTADOR */
+section#secPerfilPrestador {
+    max-width: 1000px;
+    margin: 92px auto 200px auto;
+    position: relative;
+}
+
+/* container descrição prestador */
+div.desPres {
+    position: absolute;
+    top: 0;
+    left: 83px;
+}
+
+span.profPrest {
+    font-family: LatoBold;
+    font-size: 15px;
+    color: #000000DE;
+}
+
+span.nomePrest {
+    font-family: LatoMedium;
+    font-size: 15px;
+    color: #000000DE;
+}
+
+span.desTrab {
+    font-family: LatoMedium;
+    font-size: 14px;
+    color: #000000CC;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+div.desEnd {
+    margin-top: 15px;
+}
+
+span.cid {
+    font-family: LatoRegular;
+    font-size: 12px;
+    margin-bottom: 9px;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+span.tel {
+    font-family: LatoRegular;
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+/* container informções prestador */
+button#contPre {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #2185D0;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 26px;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+div.classf {
+    margin-left: 100px;
+    display: inline-block;
+}
+
+span.titClas {
+    font-family: LatoRegular;
+    font-size: 15px;
+    color: #000000DE;
+}
+
+div.endPrest {
+    margin-top: 65px;
+}
+
+span.LocPres {
+    font-family: LatoMedium;
+    font-size: 15px;
+    color: #000000DE;
+}
+
+span.maisDesEnd {
+    font-family: LatoRegular;
+    font-size: 10px;
+    color: #00000080;
+    margin-top: 13px;
+    display: inline-block;
+}
+
+span.bair {
+    margin-left: 56px;
+}
+
+span.cep {
+    font-family: LatoRegular;
+    font-size: 12px;
+    color: #000000CC;
+}
+
+span.bairro {
+    font-family: LatoRegular;
+    font-size: 12px;
+    color: #000000CC;
+    margin-left: 20px;
+}
+
+button.iniciarChat {
+    font-family: LatoBold;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #00B5AD;
+    border: 0;
+    border-radius: 4px;
+    padding: 13px 63px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+span.desChat {
+    position: relative;
+    top: -4px;
+    left: 0;
+}
+
+
+/* INICIO FORM CONTRATO FIXED */
+div.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #464646A1;
+    z-index: -1;
+    opacity: 0;
+    transition: z-index 0.3s, opacity 0.3s; 
+}
+
+div.modalAparece {
+    z-index: 1;
+    opacity: 1;
+}
+
+form.formContrato {
+    width: 555px;
+    padding: 0 35px 20px 35px;
+    background-color: white;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 1s;
+}
+
+form.formContratoAparece {
+    top: 50%;
+}
+
+p#titForm {
+    font-family: LatoBold;
+    font-size: 16px;
+    color: white;
+    background-color: #2185D0;
+    padding: 13px 37px;
+    width: 555px;
+    position: relative;
+    left: -35px;
+}
+
+label.labContrato {
+    font-family: LatoBold;
+    font-size: 13px;
+    margin: 20px 0 6px 0;
+    display: block;
+}
+
+label.date {
+    display: inline-block;
+}
+
+label.lUm {
+    margin-right: 35.7%;
+}
+
+label.check {
+    display: inline-block;
+}
+
+label.mar {
+    margin-right: 14%;
+}
+
+input.inpContrato {
+    padding: 10px 17px;
+    font-family: LatoRegular;
+    font-size: 14px;
+    border: 1px solid #DEDEDF;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input.date {
+    width: 47%;
+}
+
+input.iUm {
+    margin-right: 5%;
+}
+
+input.inpContrato::placeholder {
+    color: #B5B5B5;
+}
+
+input.inpCheck {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input.mar {
+    margin-bottom: 15px;
+}
+
+span.desCheck {
+    font-family: LatoRegular;
+    font-size: 13px;
+    color: #333333DE;
+    margin-left: 15%;
+}
+
+span.spUm {
+    margin-right: 27%;
+}
+
+textarea.areaDescSer {
+    padding: 10px 17px;
+    font-family: LatoRegular;
+    font-size: 14px;
+    border: 1px solid #DEDEDF;
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+}
+
+textarea#descClasfcar {
+    padding: 10px 17px;
+    font-family: LatoRegular;
+    font-size: 14px;
+    border: 1px solid #DEDEDF;
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+}
+
+span#btnContratoCan {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #00000099;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #E0E1E2;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 67%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+button#btnContratoEnv {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    background-color: #2185D0;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+/* FIM FORM CONTRATO FIXED*/
+
+
+/* INICIO FORM CLASSICAR PRESTADOR FIXED */
+div.modalClassificar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #464646A1;
+    z-index: -2;
+    opacity: 0;
+    transition: z-index 0.3s, opacity 0.3s;
+}
+
+div.modalClassificarAparece {
+    z-index: 2;
+    opacity: 1;
+}
+
+form.formClasfcar {
+    width: 555px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px 20px 30px;
+    transition: left 1s;
+}
+
+form.formClasfcarAparece {
+    left: 50%;
+}
+
+p.titClasfcar {
+    font-family: LatoBold;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #2185D0;
+    padding: 13px 30px;
+    width: 555px;
+    position: relative;
+    left: -6%;
+}
+
+span.titEstrelas {
+    font-family: LatoMedium;
+    font-size: 12px;
+    color: #000000CC;
+    position: relative;
+    top: -4px;
+    left: 15px;
+}
+
+span.btnCanClasfcar {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #00000099;
+    padding: 8px 11px;
+    border-radius: 4px;
+    background-color: #E0E1E2;
+    display: inline-block;
+    margin-top: 26px;
+    cursor: pointer;
+    margin-left: 343px;
+}
+
+button#btnEnvClasfcar {
+    font-family: LatoBold;
+    font-size: 14px;
+    padding: 8px 11px;
+    color: #FFFFFF;
+    background-color: #2185D0;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* FIM FORM CLASSICAR PRESTADOR FIXED */
+
+
+/* INICIO RESENHAS */
+hr#hrClassificacao {
+    width: 450px;
+    color: #707070;
+    margin-top: 55px;
+}
+
+section#secDesPres {
+    width: 450px;
+}
+
+p#titSecDesPres {
+    font-family: LatoBold;
+    font-size: 18px;
+    color: #000000DE;
+    margin-top: 20px;
+    display: inline-block; 
+}
+
+button#btnEscAva {
+    font-family: LatoBold;
+    font-size: 14px;
+    padding: 8px 11px;
+    color: #00000099;
+    background-color: #E0E1E2;
+    border: 0;
+    margin-left: 195px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div.resenhas {
+    position: relative;
+    margin-top: 35px;
+}
+
+span.nomeCliDes {
+    font-family: LatoMedium;
+    font-size: 16px;
+    color: #000000DE;
+    display: inline-block;
+}
+
+span.dEstrelas {
+    display: inline-block; 
+    position: absolute; 
+    top: 0px;
+    right: 0;
+}
+
+span.dEstrelas > i.fa-star {
+    font-size: 16px; 
+    color: #FBBD08; 
+    display: inline-block; 
+    margin-left: -3px;
+}
+
+p.descResenhas {
+    font-family: LatoRegular;
+    color: #000000CC;
+    margin-top: 18px;
+}
+/* FIM RESENHAS */
+/* FIM SECAO PERFIL PRESTADOR */
