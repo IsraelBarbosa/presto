@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/logado.css">
     <link rel="stylesheet" href="css/perfilprestador.css">
+    <link rel="stylesheet" href="css/gifsLibras.css">
     <title>Visualizar Prestador</title>
 </head>
 
@@ -196,6 +197,11 @@
             <i class="material-icons" style="font-size:30px; position: relative; top: 4px; left: 0;">message</i>
             <span class="desChat">Chat</span>
         </button>
+
+        <button class="iniciarChat" style="top: 80px; padding: 13px 61px; background-color: #2185d0;" onclick="abrirGifs()">
+            <i class="fa fa-sign-language" style="font-size:24px"></i>
+            <span class="desChat" style="top: 0;">Libras</span>
+        </button>
     </section>
     <!-- FIM SECAO PERFIL PRESTADOR -->
 
@@ -227,8 +233,8 @@
             <label for="dataIni" class="labContrato date lUm">Data de início</label>
             <label for="dataTer" class="labContrato date">Data do término</label>
 
-            <input type="date" class="inpContrato date iUm" id="dataIni">
-            <input type="date" class="inpContrato date" id="dataTer">
+            <input type="date" class="inpContrato date iUm" id="dataIni" onmouseover="MudarCorDaIni()">
+            <input type="date" class="inpContrato date" id="dataTer" onmouseover="MudarCorDaTer()">
 
             <label for="inpDinheiro" class="labContrato">Quantia a ser paga</label>
             <input type="text" class="inpContrato mar" id="inpDinheiro" placeholder="Insira aqui o valor">
@@ -265,15 +271,103 @@
                 <i class="far fa-star" style='font-size: 32px; color: #FBBD08; display: inline-block; margin-left: -3px; cursor: pointer;'></i>
             </span>
             <span class="titEstrelas">Quantas estrelas você o(a) classificaria?</span><br>
+            <input type="text" id="txtNumEstre" style="position: relative; z-index: -1; opacity: 0;">
 
             <span class="btnCanClasfcar" onclick="fecharClasfcar()">Cancelar</span>
             <button type="submit" id="btnEnvClasfcar">Enviar</button>
         </form>
     </div>
     <!-- FIM FORM CLASSICAR PRESTADOR FIXED -->
+
+    <!-- INICIO BOX PALAVRAS LIBRAS -->
+    <div id="Mlibras">
+        <span id="titMLibras">Mensagem em libras 
+            <i class="material-icons" onclick="fecharGifs(event)" style="font-size:36px; position: absolute; top: 2px; right: 11px; cursor: pointer;">close</i>
+        </span>
+
+        <textarea name="" id="tMLibras" oninput="ReceberValores()"></textarea>
+
+        <i class="material-icons" onclick="copTexto()" title="Copiar texto" style="font-size:28px; position: absolute; bottom: 15px; left: 25px; cursor: pointer;">content_copy</i>
+        <i class='far fa-trash-alt' onclick="apaTexto()" title="Apagar texto" style='font-size:25px; color: #ff0000b2; position: absolute; bottom: 15px; right: 25px; cursor: pointer;'></i>
+        <span id="sptCop" class="tCopSuc"></span>
+    </div>
+    <!-- FIM BOX PALAVRAS LIBRAS -->
+
+    <!-- INICIO SECAO CATEGORIAS GIFS FIXED -->
+    <section id="secaoCatGifs">
+        <h1 id="tituloSecaoCatGifs">Selecione</h1>
+        <i class="material-icons" id="fecGifs" onclick="fecharGifs(event)" style="font-size: 80px; position: absolute; top: 18px; right: 17px; color: #ffffff; cursor: pointer;">close</i>
+
+        <div id="divDasecaoCatGifs">
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao/ola_gif.gif" alt="Olá em libras">
+                <p class="DesGif">Olá</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarOla()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao/oi_gif.gif" alt="Oi em libras">
+                <p class="DesGif">Oi</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarOi()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao/como_vai_gif.gif" alt="Como vai? em libras">
+                <p class="DesGif">Como vai?</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarComoVai()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao//bom_dia_gif.gif" alt="Bom dia em libras">
+                <p class="DesGif">Bom dia</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBomDia()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao/boa_tarde_gif.gif" alt="Boa tarde em libras">
+                <p class="DesGif">Boa tarde</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBoaTarde()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/saudacao/boa_noite_gif.gif" alt="Boa noite em libras">
+                <p class="DesGif">Boa noite</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarBoaNoite()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/profissao/prestador.gif" alt="Prestador em libras">
+                <p class="DesGif">Prestador</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarPrestador()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/profissao/cliente.gif" alt="Cliente em libras">
+                <p class="DesGif">Cliente</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarCliente()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+
+            <div class="catSaudacao">
+                <img src="img/gifs/frases/gostariaDeUmOrçamento.gif" alt="Cliente em libras">
+                <p class="DesGif">Gostaria de um orçamento</p>
+                <button class="btnEnviar" title="Enviar para" onclick="enviarFraseGostaria()"><i class='fas fa-share'
+                        style="font-size:23px;"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SECAO CATEGORIAS GIFS FIXED -->
     
     
     <script src="js/perfilprestador.js"></script>
+    <script src="js/gifsLib.js"></script>
     <script src="js/logado.js"></script>
 </body>
 

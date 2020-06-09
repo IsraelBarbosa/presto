@@ -1,3 +1,62 @@
+/* INICIO CLASSIFICAÇÃO PRESTADOR */
+
+let contEstr = document.getElementsByClassName("tEstrelas")[0].children;
+let campoNumEstrelas = document.getElementById("txtNumEstre");
+
+contEstr[0].addEventListener("click", function() {clsPres(0)});
+contEstr[1].addEventListener("click", function() {clsPres(1)});
+contEstr[2].addEventListener("click", function() {clsPres(2)});
+contEstr[3].addEventListener("click", function() {clsPres(3)});
+contEstr[4].addEventListener("click", function() {clsPres(4)});
+
+function clsPres(estrela) {
+    if (estrela === 4) {
+        for (let index = 0; index < 5; index++) {
+            contEstr[index].classList.replace("far", "fas");
+        }
+        campoNumEstrelas.value = 5;
+    }
+
+    if (estrela === 3) {
+        for (let index = 0; index < 4; index++) {
+            contEstr[index].classList.replace("far", "fas");
+        }
+        contEstr[4].classList.replace("fas", "far");
+        campoNumEstrelas.value = 4;
+    }
+
+    if (estrela === 2) {
+        for (let index = 0; index < 3; index++) {
+            contEstr[index].classList.replace("far", "fas");
+        }
+        contEstr[4].classList.replace("fas", "far");
+        contEstr[3].classList.replace("fas", "far");
+        campoNumEstrelas.value = 3;
+    }
+
+    if (estrela === 1) {
+        for (let index = 0; index < 2; index++) {
+            contEstr[index].classList.replace("far", "fas");
+        }
+        contEstr[4].classList.replace("fas", "far");
+        contEstr[3].classList.replace("fas", "far");
+        contEstr[2].classList.replace("fas", "far");
+        campoNumEstrelas.value = 2;
+    }
+
+    if (estrela === 0) {
+        for (let index = 0; index < 1; index++) {
+            contEstr[index].classList.replace("far", "fas");
+        }
+        contEstr[4].classList.replace("fas", "far");
+        contEstr[3].classList.replace("fas", "far");
+        contEstr[2].classList.replace("fas", "far");
+        contEstr[1].classList.replace("fas", "far");
+        campoNumEstrelas.value = 1;
+    }
+}
+/* FIM CLASSIFICAÇÃO PRESTADOR */
+
 // Abrir form contrato
 let modal =  document.getElementsByClassName("modal")[0];
 let fContrato =  document.getElementsByClassName("formContrato")[0];
@@ -36,4 +95,15 @@ window.onclick = (event) => {
         fClasficar.classList.remove("formClasfcarAparece");
         mClasficar.classList.remove("modalClassificarAparece");
     }
+}
+
+// Mudar cor inputs date
+function MudarCorDaIni() {
+    let dataIni = document.getElementById("dataIni");
+    dataIni.style.color = "black";
+}
+
+function MudarCorDaTer() {
+    let dataTer = document.getElementById("dataTer");
+    dataTer.style.color = "black";
 }
