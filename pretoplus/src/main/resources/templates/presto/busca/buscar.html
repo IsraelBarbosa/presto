@@ -44,6 +44,7 @@
                 
                 <span><a th:href="@{/editarP/{login}(login=${log.getName()})}"><span class="infCliPres" th:text="${log != null ?  log.getName()+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
                 <hr class="hrDiv">
+                <span class="sobrePerfil"><a href="contratos.html">Meus contratos</a></span>
                 <span class="sobrePerfil"><a th:href="@{/editarS/{login}(login=${log.getName()})}">Editar perfil</a></span>
                 <span class="sobrePerfil"><a href="#">Meu perfil</a></span>
                 <hr class="hrDiv">

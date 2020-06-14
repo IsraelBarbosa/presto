@@ -36,7 +36,8 @@
         	<div class="inforPerf">
             	<span><a th:href="@{/editarS/{login}(login=*{email})}"><span class="infCliPres" th:text="${user != null ?  user.login+' (Cliente)' : ''}" onclick="mudarStatPrest()"></span></a></span>
             	<span><a th:href="@{/editarP/{login}(login=*{email})}"><span class="infCliPres" th:text="${user != null ?  user.login+' (Prestador)' : ''}" onclick="mudarStatPrest()"></span></a></span>
-            	<hr class="hrDiv">
+                <hr class="hrDiv">
+                <span class="sobrePerfil"><a href="contratos.html">Meus contratos</a></span>
             	<span class="sobrePerfil"><a href="#">Editar perfil</a></span>
             	<span class="sobrePerfil"><a href="#">Meu perfil</a></span>
             	<hr class="hrDiv">
