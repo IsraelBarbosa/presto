@@ -161,7 +161,13 @@
             <label for="descServico" class="labContrato">Descrição do serviço/obra a ser realizado</label>
             <textarea name="" class="areaDescSer" id="descServico" rows="5" placeholder="Descreva aqui a obra"></textarea>
             
-            <label for="dataIni" class="labContrato date lUm">Data de início</label>
+            <label for="divFotos" class="labContrato">Anexe algumas imagens referente ao serviço</label>
+            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+            <div id="fileList"></div>
+
+            <label for="dataIni" class="labContrato date lUm">Data de início
+                <a href="#" id="fileSelect">Escolher arquivo(s)</a>
+            </label>
             <label for="dataTer" class="labContrato date">Data do término</label>
 
             <input type="date" class="inpContrato date iUm" id="dataIni" onmouseover="MudarCorDaIni()">
