@@ -86,3 +86,21 @@ function handleFiles(files) {
     fileList.appendChild(list);
   }
 }
+
+
+// Status contratos
+window.addEventListener("load", () => {
+  let status = document.getElementsByClassName("status");
+  
+  for (let index = 0; index < status.length; index++) {
+    let statussEsp = status[index].innerText.trim();
+    
+    if (statussEsp === "Pendente" || statussEsp === "pendente") {
+      status[index].style.color = "rgb(156, 138, 2)";
+    } else if (statussEsp === "Aceito" || statussEsp === "aceito"){
+      status[index].style.color = "rgb(75, 181, 67)";
+    } else if(statussEsp === "Recusado" || statussEsp === "recusado") {
+      status[index].style.color = "#F32013";
+    }
+  }
+});

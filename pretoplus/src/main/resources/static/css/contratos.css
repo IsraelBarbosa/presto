@@ -200,6 +200,19 @@ div.divContrato > p:first-child {
 }
 
 
+div.divContrato > p:first-child > span:first-child {
+    font-family: LatoBold;
+    font-size: 10px;
+    /* color: rgb(75, 181, 67); */
+    /* color: rgb(156, 138, 2); */
+    /* color: #F32013; */
+}
+
+div.divContrato > p:first-child > span:last-child {
+    font-family: LatoBold;
+    font-size: 10px;
+}
+
 div.divContrato > .btnExibirContr {
     font-family: LatoBold;
     font-size: 10px;
