@@ -196,3 +196,93 @@ div.pagNav > ul > li > a:hover {
     text-decoration: underline;
 }
 /* FIM PESQUISA DE RESULTADOS */
+
+
+
+/* INICIO RESPONSIVO */
+@media only screen and (max-width: 1200px){
+    div.resultBusca {
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    a.btnPubli {
+        display: none;
+    }
+
+    form.relev {
+        width: 380px;
+        display: block;
+    }
+
+    div.resulBus {
+        width: auto;
+        float: none;
+    }
+
+    form.filtro {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+
+    div.listaRes {
+        margin: 30px auto 0 auto;
+    }
+
+    div.pagNav {
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.contPesquisa {
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    span.clasEstr {
+        top: 97px;
+        left: 99px;
+    }
+
+    div.listaRes {
+       width: 360px;
+    }
+
+    div.contPesquisa {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 411px){
+    form.relev {
+        width: 300px;
+    }
+
+    select.rel {
+        width: 300px;
+    }
+
+    div.listaRes {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    form.relev {
+        width: 300px;
+    }
+
+    select.rel {
+        width: 300px;
+    }
+
+    span.clasEstr {
+        left: 90px;
+    }
+
+    div.listaRes {
+        width: 300px;
+    }
+}

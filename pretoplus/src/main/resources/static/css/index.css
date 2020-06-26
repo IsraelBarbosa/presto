@@ -186,3 +186,100 @@ span#direitos {
     color: #FFFFFFDE;
 }
 /* FIM FOOTER */
+
+
+
+/* Header responsivo */
+@media only screen and (max-width: 1300px) {
+    ul#logCad {
+        right: -30%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    ul#logCad {
+        display: block;
+        top: 50px;
+        width: 180px;
+        margin: 0 auto;
+        right: 0;
+    }
+
+    a#logo {
+        display: block;
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    form#buscaPre {
+        display: block;
+        width: 281px;
+        margin: 0 auto;
+        top: 20px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    ul#menu {
+        width: 270px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Footer responsivo */
+@media only screen and (max-width: 1270px) {
+    span#direitos {
+        display: inline-block;
+        top: 28px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    span#direitos {
+        width: 60%;  
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    span#direitos {
+        top: 45px; 
+    }
+  }
+  
+@media only screen and (max-width: 610px) {
+    a#logoFooter {
+        width: 155px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    span#direitos {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    form#buscaPre {
+        width: 200px;
+    }
+
+    input[type="search"] {
+        width: 200px;
+    }
+}
